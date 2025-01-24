@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/e5b8cc7a50.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com" /> -->
+        <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" /> -->
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./contact.css">
+    <script src="./main.js"></script>
+    <title>Contact Page</title>
+</head>
+
+<body>
+
+    <!-- This is where the navbar will be injected -->
+    <div id="navbar"></div>
+
+    <!-- This is where the main content will be injected -->
+    <main>
+        <div class="contact_header">
+            <h1>CONTACT</h1>
+            <div class="contact_logo">
+                <img src="./images/logos_site_vitrine/logo_ubya_sans_fond.png" alt="" srcset="">
+            </div>
+        </div>
+
+        <div class="contact_dot">
+            <div class="dot3"></div>
+            <img src="./images/pictos_site_vitrine/téléphone_bleu.png" alt="">
+            <div class="contact_num">
+                <p>Appelons-nous !</p>
+                <p>09 75 54 33 57</p>
+            </div>
+        </div>
+
+        <div class="contact_dot">
+            <div class="dot1"></div>
+            <div class="contact_demo">
+                <p>Besoin d'une démonstration ?</p>
+                <button><a href="https://calendly.com/ubya-ai/rdv" target="_blank">Prendre rendez-vous pour une démo</a></button>
+            </div>
+        </div>
+
+        <div class="contact_dot">
+            <div class="dot4"></div>
+            <p class="contact_text">Une question ? Une suggestion ? <br> Écrivez-nous !</p>
+        </div>
+
+        <div class="contacts_container">
+            <form class="Formular">
+        
+                <div class="infos">
+                    <div class="textbox">
+                        <input autocomplete="off" id="Nom" type="text" name="Nom">
+                        <!-- <span class="icon visible material-symbols-outlined">account_circle</span> -->
+                        <label htmlFor="input">Nom</label>
+                        <span class="spinner"></span>
+                    </div>
+        
+                    <div class="textbox">
+                        <input autocomplete="off" id="Prénom" type="text" name="Prénom">
+                        <!-- <span class="icon visible material-symbols-outlined">account_circle</span> -->
+                        <label htmlFor="input">Prénom</label>
+                        <span class="spinner"></span>
+                    </div>
+
+                    <div class="textbox">
+                        <input autocomplete="off" id="Entreprise" type="text" name="Entreprise">
+                        <!-- <span class="icon visible material-symbols-outlined">account_circle</span> -->
+                        <label htmlFor="input">Entreprise</label>
+                        <span class="spinner"></span>
+                    </div>
+        
+                    <div class="textbox">
+                        <input autocomplete="off" id="Email" type="email" name="Email">
+                        <!-- <span class="icon visible material-symbols-outlined">account_circle</span> -->
+                        <label htmlFor="input">Email</label>
+                        <span class="spinner"></span>
+                    </div>
+        
+                    <div class="textbox">
+                        <input autocomplete="off" id="Tel" type="tel" name="Téléphone">
+                        <!-- <span class="icon visible material-symbols-outlined">account_circle</span> -->
+                        <label htmlFor="input">Téléphone</label>
+                        <span class="spinner"></span>
+                    </div>
+                </div>
+        
+                <div class="textbox">
+                    <textarea class="msg" name="Message" id="message" cols="30" rows="9" autocomplete="off"></textarea>
+                    <label for="message">Message</label>
+                    <!-- <span class="spinner"></span> -->
+                </div>
+                
+            <button class="send" disabled>
+                <p>Envoyer</p>
+            </button>
+            </form>
+        
+            
+        </div>
+
+    </main>
+
+    <!-- This is where the footer will be injected -->
+    <div id="footer"></div>
+
+    <!-- JavaScript to load the navbar -->
+    <script src="navbar_footer.js"></script>
+    <script src="./valide.js"></script>
+
+</body>
+
+</html>

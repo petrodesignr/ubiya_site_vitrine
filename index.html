@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+
+    <title>UBYA</title>
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="desktop-nav-links">
+            <div class="logo"><a href="#"><img src="./images/logos_site_vitrine/titre_logo_blanc.png" alt=""></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Accueil</a></li>
+                <li><a href="index.html#assistants">Assistants IA</a></li>
+                <li><a href="index.html#installation">Installation</a></li>
+                <li><a href="index.html#offer">Offre</a></li>
+                <li><a href="index.html#faq">FAQ</a></li>
+            </ul>
+        </div>
+
+        <div class="d_contact">
+            <li><img src="./images/pictos_site_vitrine/démo_bleu.png" alt=""><a href="https://calendly.com/ubya-ai/rdv"
+                    target="_blank">Demander une démo</a>
+            </li>
+            <li><img src="./images/pictos_site_vitrine/téléphone_2_bleus.png" alt=""><a href="tel:0975543357">09 75 54 33 57</a>
+            </li>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <ul class="menu-links">
+            <li><a href="index.html#home" onclick="toggleMenu()">Accueil</a></li>
+            <li><a href="index.html#assistants" onclick="toggleMenu()">Assistants IA</a></li>
+            <li><a href="index.html#installation" onclick="toggleMenu()">Installation</a></li>
+            <li><a href="index.html#offer" onclick="toggleMenu()">Offre</a></li>
+            <li><a href="index.html#faq" onclick="toggleMenu()">FAQ</a></li>
+
+            <div class="contact">
+                <li><img src="./images/pictos_site_vitrine/démo_bleu.png" alt=""><a href="https://calendly.com/ubya-ai/rdv" target="_blank">Demander une démo</a>
+                </li>
+                <li><img src="./images/pictos_site_vitrine/téléphone_2_bleus.png" alt=""><a href="tel:0975543357">09 75 54 33 57</a></li>
+            </div>
+        </ul>
+
+
+    </nav>
+
+    <main id="site">
+
+        <div class="hamburger-menu">
+            <div class="ham_logo">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="logo"><a href="#"><img src="./images/logos_site_vitrine/titre_logo_blanc.png" alt=""
+                        ></a></div>
+            </div>
+
+            <div class="nav_contact">
+                <button><img src="./images/pictos_site_vitrine/démo.png" alt=""><a href="https://calendly.com/ubya-ai/rdv" target="_blank">Demander une
+                        démo</a></button>
+                <button><img src="./images/pictos_site_vitrine/tel.png" alt=""><a href="tel:0975543357">09 75 54 33 57</a></button>
+            </div>
+        </div>
+
+        <section id="home">
+            <div class="home_text">
+                <p class="p1">Révolutionnez votre entreprise <br>
+                    avec l’<span class="highlight">Intelligence Artificielle</span>
+                </p>
+                <div>
+                    <button><a href="index.html#assistants">Decouvrir les assistants IA UBYA</a></button>
+                    <button><a href="https://calendly.com/ubya-ai/rdv">Demander une démo</a></button>    
+                </div>
+            </div>
+
+            <div class="discover">
+                <p>Découvrez</p>
+                <img src="./images/logos_site_vitrine/logo_ubya_texte.png" alt="">
+                <div class="red_circle"></div>
+            </div>
+
+            <div class="turquoise_circle"></div>
+
+            <p class="discover_text">l’entreprise Française qui facilite l’accès <br>
+                à une IA sécurisée pour votre entreprise</p>
+        </section>
+
+        <section class="discover_main" >
+
+            <div class="discover_panel">
+                <img src="./images/images_site_vitrine/quart_de_rond.png" alt="">
+                <div class="discover_head">
+                    <p>1</p>
+                    <p>SÉCURISÉ</p>
+                    <p>Hébergement et traitement local de vos données</p>
+                    <hr class="styled-line">
+                    <p>Votre confidentialité est notre priorité : aucun transfert de données vers des serveurs externes,
+                        tout est contenu dans l’Ubybox, installée dans vos locaux.</p>
+                </div>
+            </div>
+
+            <div class="discover_panel">
+                <img src="./images/images_site_vitrine/quart_de_rond.png" alt="">
+                <div class="discover_head">
+                    <p>2</p>
+                    <p>ACCESSIBLE</p>
+                    <p>Prise en main rapide et intuitive</p>
+                    <hr class="styled-line">
+                    <p>Les fonctionnalités sont conçues pour être simples d'utilisation et accessibles à tous les
+                        utilisateurs.</p>
+                </div>
+            </div>
+
+            <div class="discover_panel">
+                <img src="./images/images_site_vitrine/quart_de_rond.png" alt="">
+                <div class="discover_head">
+                    <p>3</p>
+                    <p>OPTIMISÉ</p>
+                    <p>Adaptation à vos process et à vos besoins</p>
+                    <hr class="styled-line">
+                    <p>Nos solutions s’ajustent parfaitement à vos objectifs et méthodes de travail.
+                        Une compatibilité optimale avec vos outils actuels pour une transition en douceur.</p>
+                </div>
+            </div>
+
+            <div class="discover_panel">
+                <img src="./images/images_site_vitrine/quart_de_rond.png" alt="">
+                <div class="discover_head">
+                    <p>4</p>
+                    <p>PERFORMANT</p>
+                    <p>Augmentation de la productivité</p>
+                    <hr class="styled-line">
+                    <p>Automatisez vos tâches répétitives et concentrez-vous sur l’essentiel.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="zoom">
+            <p class="zoom_head">Zoom sur <span class="ubybox">UBYBOX</span></p>
+            <p class="zoom_text">Notre serveur local d’IA préinstallé et clé en main. <br>
+                Conçu pour s’intégrer rapidement et fonctionner immédiatement.</p>
+            <div class="zoom_list">
+                <div class="dot">
+                    <div class="dot1"></div>
+                    <p>Installé dans vos locaux, pour des données sécurisées</p>
+                </div>
+                <div class="dot">
+                    <div class="dot2"></div>
+                    <p>Préinstallé avec les meilleurs outils IA.</p>
+                </div>
+                <div class="dot">
+                    <div class="dot3"></div>
+                    <p>Maintenance facile avec une équipe dédiée.</p>
+                </div>
+                <div class="dot">
+                    <div class="dot4"></div>
+                    <p>Logiciels personnalisables.</p>
+                </div>
+            </div>
+            <div class="demo">
+                <button class="demo_button"><a href="https://calendly.com/ubya-ai/rdv">Demander une démo</a></button>
+                <div class="uby_box">
+                    <div class="white_circle_uby_box"></div>
+                    <img src="./images/images_site_vitrine/box.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="assistant" id="assistants">
+            <p>LES ASSISTANTS UBYA</p>
+            <!-- premier block -->
+            <div class="assist_container assist_container_1_2_3">
+                <div class="assist_header">
+                    <img src="./images/pictos_site_vitrine/assistants_fond_intérieur_blanc.png" alt="">
+                    <div class="assist_p">
+                        <p>ASSISTANT CONVERSATIONNEL</p>
+                        <p>Une aide au quotidien</p>
+                    </div>
+                </div>
+                <div class="assist_list">
+                    <ul>
+                        <li>Apprentissage automatique par l’assistant IA des données de l’entreprise (documents, images,
+                            ...)</li>
+                        <li>Création d’assistants IA illimitée</li>
+                        <li>Partage des assistants aux autres collaborateurs</li>
+                        <li>Historique des conversations</li>
+                        <li>Possibilité pour l’IA d’effectuer des recherches sur le WEB</li>
+                        <li>Traitement 100 % local et sécurisé des données : toutes les données sont traitées
+                            localement, garantissant confidentialité et sécurité pour l’entreprise.</li>
+                    </ul>
+
+                </div>
+                <div class="d_demo d_demo_1">
+                    <button class="a_1_btn"><a href="https://calendly.com/ubya-ai/rdv">Demander une démo</a></button>
+                    <img class="a_1_img" src="./images/images_site_vitrine/Screenshot_6.jpg" alt="">
+                </div>
+            </div>
+            <!-- deuxieme block -->
+            <div class="assist_container assist_container_1_2_3">
+                <div class="assist_header">
+                    <img class="a_2_img_1" src="./images/pictos_site_vitrine/mail_fixe.png" alt="">
+                    <div class="assist_p">
+                        <p>BOÎTE MAIL IA</p>
+                        <p>Un outil optimisé</p>
+                    </div>
+                </div>
+                <div class="assist_list">
+                    <ul>
+                        <li>Intégration IA fluide et illimitée</li>
+                        <li>Résumé intelligent et réponses instantanées </li>
+                        <li>Réponses personnalisées</li>
+                        <li>Rédaction fidèle aux directives</li>
+                        <li>Interaction directe</li>
+                        <li>Traitement 100 % local et sécurisé des données</li>
+                    </ul>
+
+                </div>
+                <button class="a_2_btn_1 open-popup-btn">
+                    <img src="./images/pictos_site_vitrine/plus.png" alt="">
+                </button>
+                
+                <!-- Popup -->
+                <div class="a_popup-overlay hidden" id="popupOverlay">
+                    <div class="popup-content">
+                        <span class="close-popup-btn">&times;</span>
+                        <p><span>Intégration IA fluide et illimitée :</span> notre intelligence artificielle est installée directement dans les boîtes mail des
+                        utilisateurs, sans limite de capacité ni complexité technique. <br><br>
+                        <span>Résumé intelligent et réponses instantanées pour chaque email :</span> l’IA analyse chaque email, en génère un résumé concis et
+                        propose immédiatement une réponse adaptée. <br><br>
+                        <span>Réponses personnalisées, fondées sur les données de l’utilisateur :</span> en s'appuyant sur les données de l’entreprise et
+                        l'historique des échanges, l’IA offre des réponses qui sont toujours alignées avec le contexte de l’utilisateur et ses
+                        objectifs. <br><br>
+                        <span>Rédaction fidèle aux directives :</span> l'IA rédige chaque email en respectant rigoureusement les instructions de style, de
+                        ton et de contenu, pour une communication cohérente et professionnelle. <br><br>
+                        <span>Interaction directe avec la boîte mail :</span> l’utilisateur échange directement avec sa boîte mail grâce à l’IA, pour poser
+                        des questions, retrouver des informations ou rédiger des messages, le tout en langage naturel. <br><br>
+                        <span>Traitement 100 % local et sécurisé des données :</span> toutes les données sont traitées localement, garantissant
+                        confidentialité et sécurité pour l’entreprise.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="d_demo d_demo_2">
+                    <button><a href="https://calendly.com/ubya-ai/rdv">Demander une démo</a></button>
+                    <img class="a_2_img_2" src="./images/images_site_vitrine/Screenshot_2.jpg" alt="">
+                </div>
+            </div>
+            <!-- troisieme block -->
+            <div class="assist_container assist_container_1_2_3">
+                <div class="assist_header">
+                    <img class="a_3_img_1" src="./images/pictos_site_vitrine/réunions.png" alt="">
+                    <div class="assist_p">
+                        <p>ASSISTANT DE RÉUNION</p>
+                        <p>Une gestion simplifiée et intelligente</p>
+                    </div>
+                </div>
+                <div class="assist_list">
+                    <ul>
+                        <li>Assistant IA pour l’enregistrement et la retranscription des réunions</li>
+                        <li>Résumé et gestion des tâches</li>
+                        <li>Traitement 100 % local et sécurisé des données</li>
+                        <li>Flexibilité d’enregistrement</li>
+                    </ul>
+
+                </div>
+                <button class="a_3_btn">
+                    <a href=""><img src="./images/pictos_site_vitrine/plus.png" alt=""></a>
+                </button>
+
+                <!-- Popup -->
+                <div class="a_popup-overlay hidden" id="popupOverlay">
+                    <div class="popup-content">
+                        <span class="close-popup-btn">&times;</span>
+                        <p>
+                            <span>Assistant IA pour l’enregistrement et la retranscription des réunions :</span> l’IA capture et retranscrit
+                            chaque échange de manière précise, offrant une trace complète des réunions des utilisateurs. <br><br>
+                            <span>Résumé et gestion des tâches :</span> en plus de la retranscription, l'IA génère un résumé concis et identifie
+                            automatiquement les tâches à accomplir, pour une organisation simplifiée. <br><br>
+                            <span>Traitement 100 % local et sécurisé des données :</span> toutes les données sont traitées localement,
+                            garantissant confidentialité et sécurité pour l’entreprise. <br><br>
+                            <span>Flexibilité d’enregistrement :</span> enregistrez une réunion à l’extérieur et retranscrivez-la plus tard au
+                            bureau pour une utilisation optimale. <br><br>
+                            <span>Fonctionnalités en cours de développement :</span> <br>
+                            <span>Interaction vocale en temps réel :</span> posez des questions à l'IA pendant la réunion via un boîtier pour
+                            une participation active. Grâce à l'accès aux données de l'entreprise, l'IA pourra contribuer de manière
+                            contextuelle et pertinente.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="a_3_text">
+                    <p>BIENTOT !</p>
+                    <p>Interaction vocale en temps réel</p>
+                </div>
+
+                <div class="d_demo d_demo_3">
+                    <button><a href="https://calendly.com/ubya-ai/rdv">Demander une démo</a></button>
+                    <img class="a_3_img_2" src="./images/images_site_vitrine/Screenshot_1.jpg" alt="">
+                </div>
+            </div>
+            <!-- quatrieme block -->
+            <div class="assist_container">
+                <div class="assist_header">
+                    <img src="./images/pictos_site_vitrine/images_fixe.png" alt="">
+                    <div class="assist_p">
+                        <p>GÉNÉRATION D’IMAGES</p>
+                        <p>Au profit de la créativité</p>
+                    </div>
+                </div>
+                <div class="assist_list">
+                    <ul>
+                        <li>Génération et modification d’images de haute qualité via de simples demandes en langage
+                            naturel.</li>
+                        <li>Nombreuses possibilités de modification d’images :
+                            <ul class="a_4_ul">
+                                <li>Suppression de fond</li>
+                                <li>Augmentation de la résolution</li>
+                                <li>Prolongation des contours</li>
+                                <li>Recoloration</li>
+                                <li>Suppression d’éléments</li>
+                                <li>Déplacement d’éléments</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="a_4_IA">
+                    <div class="a_4_IA_text">
+                        <p>“Portrait d'un vieil homme heureux. Reflet d'un coucher de soleil sur le visage”</p>
+                        <p>“Illustration de développeur dans un open space. Style flat design”</p>
+                        <p>“Affiche publicitaire pour un hamburger posé sur une table en bois dans un chalet en bois
+                            avec une cheminée et l'inscription Burger Land. Ambiance chaleureuse.”</p>
+                    </div>
+                    <img src="./images/images_site_vitrine/exemples_génération_images.png" alt="">
+                </div>
+                <div class="d_demo">
+                    <button><a href="https://calendly.com/ubya-ai/rdv">Demander une démo</a></button>
+                    <div class="a_4_IA_demo_text">
+                        <P>BIENTOT ! </P>
+                        <P>Génération de vidéos</P>
+                    </div>
+                </div>
+            </div>
+            <!-- cinquieme block -->
+            <div class="assist_container">
+                <div class="assist_header">
+                    <img src="./images/pictos_site_vitrine/téléphone_bleu.png" alt="">
+                    <div class="assist_p">
+                        <p>ASSISTANT TELEPHONIQUE</p>
+                        <p>Des réponses naturelles et personnalisées</p>
+                    </div>
+                </div>
+                <div class="assist_list">
+                    <ul>
+                        <li>Un assistant IA qui répond aux appels téléphoniques de manière naturelle et personnalisée
+                        </li>
+                        <li>Une assistance téléphonique qui passe à l’action</li>
+                        <li>Un assistant IA qui répond aux appels téléphoniques de manière naturelle et personnalisée
+                        </li>
+                    </ul>
+
+                </div>
+                <button class="a_5_btn">
+                    <a href=""><img src="./images/pictos_site_vitrine/plus.png" alt=""></a>
+                </button>
+
+                <!-- Popup -->
+                <div class="a_popup-overlay hidden" id="popupOverlay">
+                    <div class="popup-content">
+                        <span class="close-popup-btn">&times;</span>
+                        <p>
+                            <span>Un assistant IA qui répond aux appels téléphoniques de manière naturelle et personnalisée :</span> en se
+                            basant sur les données de l'entreprise, l’IA interagit avec les interlocuteurs de façon fluide et engageante,
+                            offrant des réponses adaptées et pertinentes, comme un assistant humain. <br><br>
+                            <span>Une assistance téléphonique qui passe à l’action :</span> au-delà des réponses, l’IA peut envoyer des emails,
+                            fixer des rendez-vous et accomplir d’autres tâches pour une prise en charge complète des besoins.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="d_demo a_5_demo">
+                    <button><a href="https://calendly.com/ubya-ai/rdv">Demander une démo</a></button>
+                    <div class="a_5_demo_text">
+                        <p>Découvrez un exemple d’interaction avec notre assistant téléphonique par IA</p>
+                    </div>
+                    <div class="a_5_demo_img">
+                        <button id="triggerPopup"><img src="./images/pictos_site_vitrine/enregistrement_sonore.png"
+                                alt="">
+                        </button>
+
+                        <div class="popup-overlay" id="popupOverlay"></div>
+                        <!-- Popup container -->
+                        <div class="audio-popup" id="audioPopup">
+                            <h3>Audio Reader</h3>
+                            <!-- Audio element -->
+                            <audio id="audioPlayer" controls>
+                                <source src="./images/images_site_vitrine/Média1.mp3" type="audio/mp3">
+                                Your browser does not support the audio element.
+                            </audio>
+                            <!-- Close popup button -->
+                            <button class="close-popup" id="closePopup">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="installation-process" id="installation">
+            <h1>Processus d’installation</h1>
+            <div class="steps">
+                <!-- Dotted Path -->
+                <div class="dotted-path"></div>
+                <!-- Step 1 -->
+                <div class="step step-1">
+                    <span class="step-number">1</span>
+                    <h2>Prise de contact avec nos conseillers</h2>
+                    <p>Initiez votre transformation digitale en prenant contact avec nos conseillers experts. Nous
+                        évaluerons ensemble vos besoins spécifiques pour identifier comment nos assistants IA peuvent le
+                        mieux servir votre entreprise et optimiser vos opérations.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="step step-2">
+                    <span class="step-number">2</span>
+                    <h2>Installation rapide et sécurisée</h2>
+                    <p>Notre équipe se charge de l’installation de l’UbyBox sur site, en utilisant une simple prise RJ45
+                        ou une connexion Wi-Fi, garantissant que 100% des données de l’entreprise sont traitées
+                        localement pour une confidentialité maximale.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="step step-3">
+                    <span class="step-number">3</span>
+                    <h2>Création de vos assistants sur mesure</h2>
+                    <p>Notre équipe dédiée prend le relais pour paramétrer vos assistants IA sur mesure. Chaque membre
+                        de votre équipe peut disposer de ses propres assistants IA, conçus sur mesure pour répondre non
+                        seulement à des questions générales mais aussi à des interrogations liées à son domaine de
+                        compétence et/ou spécifiques à votre entreprise.</p>
+                </div>
+                <!-- Step 4 -->
+                <div class="step step-4">
+                    <span class="step-number">4</span>
+                    <h2>Formation des utilisateurs</h2>
+                    <p>Nous formons les utilisateurs à l’utilisation des assistants, assurant une intégration fluide
+                        dans votre quotidien professionnel. Avec vos assistants IA opérationnels, vous êtes prêt à
+                        transformer votre environnement de travail.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="offer" id="offer">
+            <p class="offer_head">Notre offre</p>
+            <img class="offer_img_1" src="./images/logos_site_vitrine/contour.png" alt="" srcset="">
+            <div class="ubya_offer">
+                <p><span>489€</span>/mois</p>
+                <p><span>+10€</span>/utilisateur/mois</p>
+                <p>Frais d'installation : <span>800€</span></p>
+                <p>(offerts en soucription annuelle)</p>
+            </div>
+            <img class="offer_img_2" src="./images/images_site_vitrine/flèche_foncée.png" alt="">
+            <div class="offer_list">
+                <ul>
+                    <li>
+                        Apprentissage de l’IA illimité
+                        avec les données de l’entreprise
+                    </li>
+                    <li>
+                        Assistants conversationnels illimités
+                    </li>
+                    <li>
+                        Conversations illimitées
+                    </li>
+                    <li>
+                        Boîte mail par IA Illimitée
+                    </li>
+                    <li>
+                        Gestion de réunion par IA Illimitée
+                    </li>
+                    <li>
+                        Support et accompagnement inclus par une équipe d’experts basés en France
+                    </li>
+                </ul>
+            </div>
+            <div class="opt">
+                <div class="opt_circle"></div>
+                <p>Options</p>
+            </div>
+            <div class="offer_opt">
+                <div class="offer_opt_1">
+                    <p>Génération / modification d’images illimitées par IA</p>
+                    <p><span class="opt_1_span">+80€</span>/mois</p>
+                </div>
+                <div class="offer_opt_2">
+                    <p>Génération de vidéo par IA <br> <br> en cours de développement</p>
+                </div>
+                <div class="offer_opt_3">
+                    <p>Assistant téléphonique par IA</p>
+                    <p>
+                        <span class="opt_3_span_1">220€</span>
+                        <span class="opt_3_span_2">/mois +~0,35€/min</span> 
+                        <br>
+                        en cours de développement
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="FAQ" id="faq">
+            <div class="FAQ_container">
+                <div class="FAQ_header">
+                    <img src="./images/pictos_site_vitrine/faq.png" alt="">
+                    <p>FAQ <br> Questions frequentes</p>
+                </div>
+                <div class="FAQ_content">
+                    <div class="FAQ_question">
+                        <p>Qu’est-ce qu’un assistant IA personnalisé ?
+                         <button class="Q_btn"><img src="./images/pictos_site_vitrine/chevron_faq.png" alt=""></button>   
+                        </p>
+                        <div class="Q_p">
+                            <p>Un assistant IA est un outil personnalisé qui vous permet de vous aider au quotidien.</p>
+                        </div>
+                    </div>
+                    <div class="FAQ_question">
+                        <p>Comment sécurisez-vous les données fournies par notre entreprise ?
+                            <button class="Q_btn"><img src="./images/pictos_site_vitrine/chevron_faq.png" alt=""></button>
+                        </p>
+                        <div class="Q_p">
+                            <p>Un assistant IA est un outil personnalisé qui vous permet de vous aider au quotidien.</p>
+                        </div>
+                    </div>
+                    <div class="FAQ_question">
+                        <p>Comment se déroule la formation des équipes ?
+                            <button class="Q_btn"><img src="./images/pictos_site_vitrine/chevron_faq.png" alt=""></button>
+                        </p>
+                        <div class="Q_p">
+                            <p>Un assistant IA est un outil personnalisé qui vous permet de vous aider au quotidien.</p>
+                        </div>
+                    </div>
+                    <div class="FAQ_question">
+                        <p>Combien de temps faut-il pour intégrer un assistant IA dans notre entreprise ?
+                            <button class="Q_btn"><img src="./images/pictos_site_vitrine/chevron_faq.png" alt=""></button>
+                        </p>
+                        <div class="Q_p">
+                            <p>Un assistant IA est un outil personnalisé qui vous permet de vous aider au quotidien.</p>
+                        </div>
+                    </div>
+                    <div class="FAQ_question">
+                        <p>Les assistants IA peuvent-ils vraiment comprendre et répondre à des questions spécifiques à notre entreprise ?
+                            <button class="Q_btn"><img src="./images/pictos_site_vitrine/chevron_faq.png" alt=""></button>
+                        </p>
+                        <div class="Q_p">
+                            <p>Oui, absolument. Nos assistants IA sont entraînés avec des informations spécifiques à votre entreprise, leur permettant
+                            de comprendre et de répondre précisément à des questions liées à votre domaine d'activité, à votre culture d'entreprise,
+                            et même à des procédures internes.</p>
+                        </div>
+                    </div>
+                    <div class="FAQ_question">
+                        <p>Est-il possible de mettre à jour ou de modifier nos assistants IA après leur déploiement ?
+                            <button class="Q_btn"><img src="./images/pictos_site_vitrine/chevron_faq.png" alt=""></button>
+                        </p>
+                        <div class="Q_p">
+                            <p>Un assistant IA est un outil personnalisé qui vous permet de vous aider au quotidien.</p>
+                        </div>
+                    </div>
+                    <div class="FAQ_question">
+                        <p>Comment assurer que l'assistant IA reste performant au fil du temps ?
+                            <button class="Q_btn"><img src="./images/pictos_site_vitrine/chevron_faq.png" alt=""></button>
+                        </p>
+                        <div class="Q_p">
+                            <p>Un assistant IA est un outil personnalisé qui vous permet de vous aider au quotidien.</p>
+                        </div>
+                    </div>
+                    <div class="FAQ_question">
+                        <p>Quelles sont les fonctionnalités offertes par les assistants IA ?
+                            <button class="Q_btn"><img src="./images/pictos_site_vitrine/chevron_faq.png" alt=""></button>
+                        </p>
+                        <div class="Q_p">
+                            <p>Un assistant IA est un outil personnalisé qui vous permet de vous aider au quotidien.</p>
+                        </div>
+                    </div>
+                    <div class="FAQ_question">
+                        <p>Qu'est-ce que l'interface avancée de génération/modification d'images par IA ?
+                            <button class="Q_btn"><img src="./images/pictos_site_vitrine/chevron_faq.png" alt=""></button>
+                        </p>
+                        <div class="Q_p">
+                            <p>Un assistant IA est un outil personnalisé qui vous permet de vous aider au quotidien.</p>
+                        </div>
+                    </div>
+                    <div class="FAQ_question">
+                        <p>Comment puis-je obtenir plus d'informations ou démarrer avec un assistant IA pour mon entreprise ?
+                            <button class="Q_btn"><img src="./images/pictos_site_vitrine/chevron_faq.png" alt=""></button>
+                        </p>
+                        <div class="Q_p">
+                            <p>Un assistant IA est un outil personnalisé qui vous permet de vous aider au quotidien.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Q_nous">
+                    <div class="orange_circle"></div>
+                    <p>Votre question n’est pas dans la liste ?</p>
+                </div>
+                <div>
+                    <button class="contact_btn"><a href="./contact.html">Contactez-nous !</a></button>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="blog-news">
+            <h5>à la une</h5>
+        </section>
+
+        <footer class="ubya-footer">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="./images/logos_site_vitrine/logo_ubya_sans_fond.png" alt="UBYA Logo" class="footer-logo-image" />
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html#home">Accueil</a></li>
+                        <li><a href="index.html#assistants">Assistants IA</a></li>
+                        <li><a href="index.html#installation">Installation</a></li>
+                        <li><a href="index.html#offer">Offre</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <ul>
+                        <li><a href="./contact.html"><strong>Nous contacter</strong></a></li>
+                        <li><a href="./about.html">A propos</a></li>
+                        <li><a href="">CGV - CGU</a></li>
+                        <li><a href="">Politique de confidentialité</a></li>
+                        <li class="footer-social-links">
+                            <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                                <img src="./images/pictos_site_vitrine/linkedin.png" alt="LinkedIn" />
+                            </a>
+                            <a href="https://www.youtube.com" target="_blank" aria-label="YouTube">
+                                <img src="./images/pictos_site_vitrine/youtube.png" alt="YouTube" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
