@@ -9,21 +9,6 @@ function toggleMenu() {
     icon.classList.toggle("open");
     contact.classList.toggle("hidden");
 }
-// function toggleMenu() {
-//     const body = document.body;
-//     const menuLinks = document.querySelector('.menu-links');
-
-//     // Toggle the open class on the menu
-//     const isMenuOpen = menuLinks.classList.toggle('open');
-
-//     // Toggle the class on the body to prevent scrolling
-//     if (isMenuOpen) {
-//         body.classList.add('menu-open');
-//     } else {
-//         body.classList.remove('menu-open');
-//     }
-// }
-
 
 // JavaScript to handle popup functionality
         document.addEventListener('DOMContentLoaded', () => {
@@ -194,6 +179,7 @@ function toggleMenu() {
                 }
             });
         });
+
 
 
 

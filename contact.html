@@ -56,57 +56,46 @@
         </div>
 
         <div class="contacts_container">
-            <form class="Formular">
-        
+
+            <form id="contactForm" class="Formular">
                 <div class="infos">
                     <div class="textbox">
-                        <input autocomplete="off" id="Nom" type="text" name="Nom">
-                        <!-- <span class="icon visible material-symbols-outlined">account_circle</span> -->
+                        <input autocomplete="off" id="Nom" type="text" name="Nom" required>
                         <label htmlFor="input">Nom</label>
                         <span class="spinner"></span>
                     </div>
-        
                     <div class="textbox">
-                        <input autocomplete="off" id="Prénom" type="text" name="Prénom">
-                        <!-- <span class="icon visible material-symbols-outlined">account_circle</span> -->
+                        <input autocomplete="off" id="Prénom" type="text" name="Prénom" required>
                         <label htmlFor="input">Prénom</label>
                         <span class="spinner"></span>
                     </div>
-
                     <div class="textbox">
-                        <input autocomplete="off" id="Entreprise" type="text" name="Entreprise">
-                        <!-- <span class="icon visible material-symbols-outlined">account_circle</span> -->
+                        <input autocomplete="off" id="Entreprise" type="text" name="Entreprise" required>
                         <label htmlFor="input">Entreprise</label>
                         <span class="spinner"></span>
                     </div>
-        
                     <div class="textbox">
-                        <input autocomplete="off" id="Email" type="email" name="Email">
-                        <!-- <span class="icon visible material-symbols-outlined">account_circle</span> -->
+                        <input autocomplete="off" id="Email" type="email" name="Email" required>
                         <label htmlFor="input">Email</label>
                         <span class="spinner"></span>
                     </div>
-        
                     <div class="textbox">
                         <input autocomplete="off" id="Tel" type="tel" name="Téléphone">
-                        <!-- <span class="icon visible material-symbols-outlined">account_circle</span> -->
                         <label htmlFor="input">Téléphone</label>
                         <span class="spinner"></span>
                     </div>
                 </div>
-        
                 <div class="textbox">
-                    <textarea class="msg" name="Message" id="message" cols="30" rows="9" autocomplete="off"></textarea>
+                    <textarea class="msg" name="Message" id="message" cols="30" rows="9" required></textarea>
                     <label for="message">Message</label>
-                    <!-- <span class="spinner"></span> -->
                 </div>
-                
-            <button class="send" disabled>
-                <p>Envoyer</p>
-            </button>
+                <button class="send" type="submit" id="sendButton">
+                    <p>Envoyer</p>
+                </button>
             </form>
-        
-            
+
+
+
         </div>
 
     </main>
@@ -117,6 +106,7 @@
     <!-- JavaScript to load the navbar -->
     <script src="navbar_footer.js"></script>
     <script src="./valide.js"></script>
+    <script src="./main.js"></script>
 
 </body>
 

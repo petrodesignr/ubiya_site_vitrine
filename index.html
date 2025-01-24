@@ -12,66 +12,10 @@
 </head>
 
 <body>
-    <nav id="desktop-nav">
-        <div class="desktop-nav-links">
-            <div class="logo"><a href="#"><img src="./images/logos_site_vitrine/titre_logo_blanc.png" alt=""></a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html#home">Accueil</a></li>
-                <li><a href="index.html#assistants">Assistants IA</a></li>
-                <li><a href="index.html#installation">Installation</a></li>
-                <li><a href="index.html#offer">Offre</a></li>
-                <li><a href="index.html#faq">FAQ</a></li>
-            </ul>
-        </div>
 
-        <div class="d_contact">
-            <li><img src="./images/pictos_site_vitrine/démo_bleu.png" alt=""><a href="https://calendly.com/ubya-ai/rdv"
-                    target="_blank">Demander une démo</a>
-            </li>
-            <li><img src="./images/pictos_site_vitrine/téléphone_2_bleus.png" alt=""><a href="tel:0975543357">09 75 54 33 57</a>
-            </li>
-        </div>
-    </nav>
-
-    <nav id="hamburger-nav">
-        <ul class="menu-links">
-            <li><a href="index.html#home" onclick="toggleMenu()">Accueil</a></li>
-            <li><a href="index.html#assistants" onclick="toggleMenu()">Assistants IA</a></li>
-            <li><a href="index.html#installation" onclick="toggleMenu()">Installation</a></li>
-            <li><a href="index.html#offer" onclick="toggleMenu()">Offre</a></li>
-            <li><a href="index.html#faq" onclick="toggleMenu()">FAQ</a></li>
-
-            <div class="contact">
-                <li><img src="./images/pictos_site_vitrine/démo_bleu.png" alt=""><a href="https://calendly.com/ubya-ai/rdv" target="_blank">Demander une démo</a>
-                </li>
-                <li><img src="./images/pictos_site_vitrine/téléphone_2_bleus.png" alt=""><a href="tel:0975543357">09 75 54 33 57</a></li>
-            </div>
-        </ul>
-
-
-    </nav>
+    <div id="navbar"></div>
 
     <main id="site">
-
-        <div class="hamburger-menu">
-            <div class="ham_logo">
-                <div class="hamburger-icon" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-
-                <div class="logo"><a href="#"><img src="./images/logos_site_vitrine/titre_logo_blanc.png" alt=""
-                        ></a></div>
-            </div>
-
-            <div class="nav_contact">
-                <button><img src="./images/pictos_site_vitrine/démo.png" alt=""><a href="https://calendly.com/ubya-ai/rdv" target="_blank">Demander une
-                        démo</a></button>
-                <button><img src="./images/pictos_site_vitrine/tel.png" alt=""><a href="tel:0975543357">09 75 54 33 57</a></button>
-            </div>
-        </div>
 
         <section id="home">
             <div class="home_text">
@@ -623,41 +567,11 @@
             <h5>à la une</h5>
         </section>
 
-        <footer class="ubya-footer">
-            <div class="footer-container">
-                <div class="footer-logo">
-                    <img src="./images/logos_site_vitrine/logo_ubya_sans_fond.png" alt="UBYA Logo" class="footer-logo-image" />
-                </div>
-                <div class="footer-links">
-                    <ul>
-                        <li><a href="index.html#home">Accueil</a></li>
-                        <li><a href="index.html#assistants">Assistants IA</a></li>
-                        <li><a href="index.html#installation">Installation</a></li>
-                        <li><a href="index.html#offer">Offre</a></li>
-                        <li><a href="index.html#faq">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <ul>
-                        <li><a href="./contact.html"><strong>Nous contacter</strong></a></li>
-                        <li><a href="./about.html">A propos</a></li>
-                        <li><a href="">CGV - CGU</a></li>
-                        <li><a href="">Politique de confidentialité</a></li>
-                        <li class="footer-social-links">
-                            <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
-                                <img src="./images/pictos_site_vitrine/linkedin.png" alt="LinkedIn" />
-                            </a>
-                            <a href="https://www.youtube.com" target="_blank" aria-label="YouTube">
-                                <img src="./images/pictos_site_vitrine/youtube.png" alt="YouTube" />
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
+        <div id="footer"></div>
 
     </main>
 
+    <script src="navbar_footer.js"></script>
     <script src="main.js"></script>
 
 </body>
