@@ -117,10 +117,10 @@ function toggleMenu() {
                     }
 
                     const posts = await response.json();
-                    const blogNewsDiv = document.getElementById('blog-news');
+                    const blogNewsDiv = document.getElementById('blog_post_content');
 
                     if (!blogNewsDiv) {
-                        throw new Error("Element with ID 'blog-news' not found in the DOM.");
+                        throw new Error("Element with ID 'blog_post_content' not found in the DOM.");
                     }
 
                     posts.slice(0, 3).forEach(post => {
