@@ -370,7 +370,6 @@ li img {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: auto;
     overflow: visible;
     background-image: url(./images/images_site_vitrine/fond_haut.jpg);
     background-size: 115%;
@@ -382,7 +381,7 @@ li img {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    height: 14vh;
+    
 }
 
 .home_text .p1{
@@ -399,7 +398,14 @@ li img {
     color: #F28C17;
 }
 
-.home_text button a{
+.home_buttons{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    margin: 0px;
+}
+
+.home_buttons a{
     font-family: 'comfortaa', sans-serif;
     font-size: clamp(0.6rem, 3vw, 2.5rem);
     display: inline-block;
@@ -412,12 +418,18 @@ li img {
 }
 
 /*Section Discover */
+
+
 .discover_main{
-    width: 100vw;
-    height: auto;
+    /* width: 100vw; */
+    min-height: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    min-height: auto; 
+    overflow: hidden;
 }
 
 .discover_content{
@@ -466,14 +478,42 @@ li img {
     z-index: 200;
 }
 
-.discover_content_block{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 100%;
+/* ===== Discover Content Block ===== */
+.discover_content_block {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  grid-template-rows: auto auto; /* Two rows */
+  gap: 30px; /* Spacing between panels */
+  justify-content: center;
+  padding: 60px 5%;
+}
+
+/* ===== Panel Layout ===== */
+.panel_1 {
+  grid-column: 1 / 2; /* First column */
+  grid-row: 1 / 2; /* First row */
+}
+
+.panel_3 {
+  grid-column: 1 / 2; /* First column */
+  grid-row: 2 / 3; /* Second row */
+}
+
+.panel_2 {
+  grid-column: 2 / 3; /* Second column */
+  grid-row: 1 / 2; /* First row */
+}
+
+.panel_4 {
+  grid-column: 2 / 3; /* Second column */
+  grid-row: 2 / 3; /* Second row */
+}
+
+/* ===== Responsive Layout ===== */
+@media (max-width: 768px) {
+   .discover_content_block {
+    grid-template-columns: 1fr 1fr; /* Single column on mobile */
+  } 
 }
 
 .discover_panel {
@@ -1555,7 +1595,7 @@ h1 {
         left: 20vw;
     }
         .home_text{
-        height: 15.5vh;
+        min-height: auto;
     }
 
     .home_text button {
@@ -1740,7 +1780,7 @@ h1 {
     }
 
     .home_text {
-        height: 17.5vh;
+        min-height: auto;
     }
 
     .home_text button {
