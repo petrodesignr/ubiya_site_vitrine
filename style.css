@@ -1941,6 +1941,189 @@ h1 {
 
 }
 
+@media (min-width: 630px) {
+
+    .menu-links a {
+        position: relative;
+        top: 20px;
+        font-size: 10px;
+        line-height: 30px;
+
+    }
+
+    .contact ul {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        position: relative;
+        top: 20px;
+    }
+
+    .contact li {
+        justify-self: center;
+        width: auto;
+    }
+
+    .contact ul li a {
+        position: relative;
+        top: 0;
+        font-size: 10px;
+        margin-right: 0 10px;
+    }
+
+    li img {
+        width: 20px;
+        margin-left: 2px;
+    }
+
+    #home {
+        background-size: 115% 115%;
+    }
+
+    .home_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100%;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .home_text .p1 {
+        position: relative;
+        bottom: 10px;
+        font-size: 14px;
+    }
+
+    .home_buttons button a {
+        font-size: 16px;
+    }
+
+    .discover {
+        margin: 0 50px;
+    }
+
+    .discover img {
+        width: 100px;
+    }
+
+    .discover p {
+        font-size: 30px;
+    }
+
+    .discover img {
+        width: 150px;
+        position: relative;
+        top: 5px;
+        left: 10px;
+    }
+
+    .red_circle {
+        width: 40px;
+        height: 40px;
+    }
+
+    .turquoise_circle {
+        width: 120px;
+        height: 120px;
+        position: relative;
+        left: 100px;
+    }
+
+    .discover_text {
+        position: relative;
+        justify-self: center;
+        left: 50px;
+        font-size: 16px;
+    }
+
+    /* zoom section */
+
+    .zoom {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 40px;
+    }
+
+    .zoom_content {
+        width: auto;
+    }
+
+    .ubybox {
+        font-size: 35px;
+        position: relative;
+        top: -18px;
+        left: 100px;
+    }
+
+    .zoom_text {
+        position: relative;
+        left: 45%;
+        bottom: 30px;
+    }
+
+    .colorful-list {
+        position: relative;
+        left: 60%;
+        bottom: 20px;
+    }
+
+    .uby_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    .white_circle_uby_box {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        background-color: white;
+    }
+
+    .demo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        left: 80px;
+        top: 15px;
+        margin: 0;
+    }
+
+    .uby_box img {
+        position: relative;
+        width: 180px;
+        left: 0px;
+    }
+
+    .demo_button {
+        position: relative;
+        top: 65px;
+        right: 200px;
+        width: auto;
+    }
+
+    .offer_img_1 {
+        width: 400px;
+        position: relative;
+        align-self: center;
+    }
+
+    .offer_img_2 {
+        width: 100px;
+        transform: rotate(-10deg);
+        position: relative;
+        align-self: center;
+        bottom: 50px;
+        right: 180px;
+    }
+}
+
 @media (min-width: 640px) {
 
     .menu-links a {
@@ -2347,6 +2530,10 @@ h1 {
             }
 
         /* home section */
+
+        #home {
+            background-size: 115%;
+        }
             .home_text {
                 display: flex;
                 flex-direction: column;
@@ -2380,7 +2567,8 @@ h1 {
             color: #194051;
             text-align: left;
             padding: 0px 10px;
-            margin: 0 0 0 20px;
+            position: relative;
+            top: 0px;
             }
 
             .highlight {
@@ -2413,7 +2601,7 @@ h1 {
             .home_buttons{
                 display: flex;
                 align-content: flex-end;
-                margin: 15px 0 0 0;
+                margin: 5px 0 0 0;
                 gap: 30px;
             }
         
@@ -3146,6 +3334,25 @@ h1 {
 
         }
 
+@media (min-width: 850px) {
+
+    .opt {
+        position: relative;
+        align-self: center;
+        left: 7%;
+        bottom: 170px;
+    }
+
+    .offer_opt {
+        width: 50%;
+        align-self: flex-end;
+        gap: 5px;
+        margin: 0;
+        position: relative;
+        bottom: 180px;
+    }
+}
+
 @media screen and (min-width: 1024px) {
     .hamburger-menu {
         display: none;
@@ -3497,4 +3704,6 @@ h1 {
         left: 0px;
     }
 }
+
+
 
