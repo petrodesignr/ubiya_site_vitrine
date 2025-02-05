@@ -2059,7 +2059,7 @@ h1 {
 .zoom_text {
     position: relative;
     left: 45%;
-    bottom: 25px;
+    bottom: 30px;
 }
 
 .colorful-list {
@@ -2121,6 +2121,35 @@ h1 {
     bottom: 50px;
     right: 180px;
 }
+}
+
+@media (min-width: 647px) {
+    .ubybox {
+            font-size: 35px;
+            position: relative;
+            top: 18px;
+            left: 20px;
+        }
+    
+        .zoom_text {
+            position: relative;
+            left: 45%;
+            bottom: 0px;
+        }
+    
+        .colorful-list {
+            position: relative;
+            left: 60%;
+            bottom: 0px;
+        }
+    
+        .uby_box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+        }
 }
 
 /* base styles for tablet (768px) */
