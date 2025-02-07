@@ -3335,6 +3335,49 @@ h1 {
         }
 
 @media (min-width: 850px) {
+    .assist_container_1 .assist_list {
+        width: 80%;
+        margin-left: -60px;
+        margin-right: 80px;
+    }
+
+    .d_demo_1 {
+        position: relative;
+        right: 18px;
+    }
+
+    .a_1_img {
+        top: 35px;
+    }
+
+    .a_2_img_2 {
+        left: 5%;
+    }
+
+    .a_3_img_2 {
+        bottom: 65%;
+        left: 21%;
+    }
+
+    .a_4_IA {
+        position: relative;
+        top: -92%;
+        /* right: -50%; */
+    }
+
+    .a_4_IA_text {
+        position: relative;
+        top: -10px;
+    }
+
+
+    
+    .column-1,
+    .column-2{
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
 
     .opt {
         position: relative;
@@ -3353,7 +3396,7 @@ h1 {
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
     .hamburger-menu {
         display: none;
     }
@@ -3434,7 +3477,7 @@ h1 {
    /* home section */
 
    #home {
-        background-size: 108% 108%;
+        background-size: 100%;
     }
 
     .home_text {
@@ -3618,7 +3661,7 @@ h1 {
 
     .d_demo_3 {
         left: 250px;
-        bottom: 150px;
+        bottom: 146px;
     }
 
     /* forth assistant */
@@ -3679,6 +3722,91 @@ h1 {
         right: 50px;
         bottom: 70px;
     }
+    
+    /* installation process section */
+
+    .installation_process {
+        width: 100%;
+    }
+
+    .steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    margin: 50px 50px;
+    }
+
+    .column-1,
+    .column-2 {
+        display: flex;
+        flex-direction: row;
+        gap: 150px;
+        /* Space between steps */
+    }
+
+    .column-1{
+        position: relative;
+        right: 80px;
+    }
+
+    .column-2{
+        position: relative;
+        left: 80px;
+    }
+
+    .step {
+    width: 250px;
+    background: white;
+    color: #194051;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    text-align: left;
+    }
+
+    .step-number {
+        font-size: 45px;
+        justify-content: center;
+    }
+
+    .step h2 {
+        font-size: 14px;
+    }
+
+    .step p {
+        font-size: 12px;
+    }
+
+    .dotted-path {
+        position: absolute;
+        width: 60%;
+        height: 150px;
+        margin-bottom: 176px;
+        right: 190px;
+        border-right: 12px dotted #F28C17;
+        border-top: 12px dotted #F28C17;
+        border-bottom: 12px dotted #F28C17;
+        border-radius: 100px;
+        clip-path: inset(0 0 0 12%);
+        overflow: hidden;
+    }
+
+    .dotted-path-2 {
+        position: absolute;
+        width: 60%;
+        height: 150px;
+        margin-top: 100px;
+        left: 187px;
+        border-left: 12px dotted #F28C17;
+        border-top: 12px dotted #F28C17;
+        border-bottom: 12px dotted #F28C17;
+        border-radius: 100px;
+        clip-path: inset(0 12% 0 0 );
+        overflow: hidden;
+    }
+
 
     /* offer section */
 
@@ -3703,6 +3831,10 @@ h1 {
         top: 0px;
         left: 0px;
     }
+}
+
+@media (min-width: 1280px) {
+    
 }
 
 
