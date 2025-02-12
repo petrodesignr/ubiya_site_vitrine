@@ -678,6 +678,68 @@ li img {
 
 /* Section Les Assistants UBYA*/
 
+/* images pop up */
+
+/* Pop-up Background */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    /* Hidden initially */
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease-in-out;
+    z-index: 99999999;
+}
+
+/* Pop-up Image */
+.popup img {
+    max-width: 95%;
+    max-height: 95%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+    animation: scaleIn 0.3s ease-in-out;
+    
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Scale In Animation */
+@keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+/* images pop up fin */
+
 .assistant{
     display: flex;
     flex-direction: column;
@@ -1130,7 +1192,7 @@ h1 {
         /* Dotted Path */
 .dotted-path {
     position: absolute;
-    height: 100%;
+    height: 70%;
     width: 1px;
     border-right: 14px dotted #F28C17;
     margin: 0 auto;
@@ -1373,7 +1435,8 @@ h1 {
 .Q_p p{
     font-family: 'comfortaa', sans-serif;
     font-weight: lighter;
-    line-height: 15px;
+    margin-top: 10px;
+    line-height: 20px;
     font-size: 9px;
     color: #194951d2;
 }
@@ -3252,7 +3315,7 @@ h1 {
             }
         
             .offer_list {
-                width: 40%;
+                width: 290px;
                 font-size: 16px;
                 margin: -20% 0 0 10px;
             }
@@ -3261,7 +3324,7 @@ h1 {
                 position: relative;
                 align-self: center;
                 left: 7%;
-                bottom: 230px;
+                bottom: 200px;
             }
 
             .opt_circle {
@@ -3278,10 +3341,10 @@ h1 {
             .offer_opt {
                 width: 50%;
                 align-self: flex-end;
-                gap: 5px;
+                gap: 25px;
                 margin: 0;
                 position: relative;
-                bottom: 250px;
+                bottom: 220px;
             }
         
             .offer_opt_1,
@@ -3410,7 +3473,7 @@ h1 {
         position: relative;
         align-self: center;
         left: 7%;
-        bottom: 170px;
+        bottom: 200px;
     }
 
     .offer_opt {
@@ -3419,7 +3482,84 @@ h1 {
         gap: 5px;
         margin: 0;
         position: relative;
-        bottom: 180px;
+        bottom: 200px;
+    }
+
+    .offer_list {
+        width: 40%;
+        font-size: 16px;
+        margin: -15% 0 0 10px;
+    }
+
+    .offer_img_2 {
+    width: 120px;
+    transform: rotate(-2deg);
+    position: relative;
+    align-self: center;
+    bottom: 190px;
+    right: 130px;
+    }
+}
+
+@media (min-width: 940px) {
+    .home_orange_circle{
+        top: 30px;
+    }
+
+    .a_2_img_1 {
+        position: relative;
+        top: 10px;
+    }
+
+    .a_3_img_2 {
+        left: 44% ;
+    }
+
+    .a_4_IA_text {
+        top: 10px;
+    }
+
+    .assist_container_4 .assist_header, 
+    .assist_container_4 .assist_list, 
+    .assist_container_4 .d_demo {
+    display: flex;
+    align-self: flex-end;
+    width: 50%;
+    }
+
+    .assist_container_4 .assist_list {
+        position: relative;
+        bottom: 25px;
+    } 
+
+    .assist_container_4 .assist_p :first-child {
+        margin-left: 0;
+    }
+
+    .assist_container_4 .assist_p :last-child {
+        margin-left: 0;
+    }
+
+    .assist_container_5{
+        height: 255px;
+    }
+
+    .assist_container_5 .assist_list {
+        position: relative;
+        left: 12%;
+        margin: 5% 0 0 0 !important;
+    }
+
+    .a_5_demo p {
+        position: relative;
+        width: 230px;
+        font-size: 12px;
+        line-height: 20px;
+        margin: 0% 0 150% 200% !important;
+    }
+
+    .offer_opt {
+        gap: 30px;
     }
 }
 
@@ -3771,8 +3911,11 @@ h1 {
     }
 
 
-
     /* fifth assistant */
+
+    .assist_container_5 {
+    height: 250px;
+    }
 
     .assist_container_5 .assist_list {
         width: 45%;
@@ -3800,6 +3943,7 @@ h1 {
 
     .a_5_demo_text p {
         width: 252px;
+        margin: 0% 0 150% 130% !important;
     }
 
     .a_5_demo_img {
@@ -3899,28 +4043,25 @@ h1 {
 
     .offer_list {
         position: relative;
-        top: 80px;
+        width: 38%;
+        top: 0px;
         left: 50px;
     }
 
     .opt {
         position: relative;
-        top: 0px;
+        bottom: 190px;
         left: 50px;
     }
 
     .offer_opt {
         position: relative;
-        top: 0px;
+        bottom: 190px;
         left: 0px;
     }
 }
 
 @media (min-width: 1200px) {
-
-    #home{
-
-    }
 
     .assist_container {
         margin:100px 50px;
@@ -4117,6 +4258,110 @@ h1 {
 }
 
 @media (min-width: 1440px) {
+
+    #home {
+        background-size: 100%;
+    }
+
+    .home_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        /* height: 100%; */
+        padding: 0px 0px 20px 150px;
+        
+    }
+
+    .home_text .p1 {
+        position: relative;
+        top: 30px;
+        font-size: 20px;
+    }
+
+    .highlight {
+        font-size: 30px;
+    }
+
+    button a {
+        font-size: 16px;
+    }
+    .home_buttons button a{
+        font-size: 16px;
+        padding: 10px;
+        border-radius: 30px;
+        margin-top: 60px;
+    }
+
+    .home_red_circle_1 {
+        width: 70px;
+        height: 70px;
+        top: 20px;
+    }
+
+    .home_red_circle_2 {
+        width: 35px;
+        height: 35px;
+        left: 120px;
+        top: 20px;
+    }
+
+    .home_turquoise_circle {
+        position: relative;
+        width: 110px;
+        height: 110px;
+        border-radius: 60px;
+        top: 50px;
+    }
+
+    .home_orange_circle {
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+        top: 100px;
+    }
+
+    .zoom_head {
+        font-size: 30px;
+    }
+    
+    .ubybox {
+        font-size: 45px;
+    }
+
+    .zoom_text {
+        width: 500px;
+        font-size: 14px;
+        left: 180px;
+    }
+
+    .colorful-list {
+        left: 50%;
+    }
+
+    .demo {
+        left: 0;
+    }
+
+    .demo_button {
+        padding: 15px;
+        border-radius: 20px;
+    }
+    .demo_button a {
+        font-size: 16px;
+    }
+
+    .a_2_img_1 {
+        top: 40px;
+    }
+
+    .a_3_img_2 {
+        left: 53%;
+    }
+
+    .d_demo button a {
+        font-size: 16px;
+    }
+    
     .d_demo_3 {
         bottom: 145px;
     }

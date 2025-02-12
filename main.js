@@ -10,6 +10,45 @@ function toggleMenu() {
     contact.classList.toggle("hidden");
 }
 
+// image assistant popup 
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Select all images
+    const images = document.querySelectorAll(".a_1_img, .a_2_img_2, .a_3_img_2");
+
+    // Create a reusable pop-up container
+    const popup = document.createElement("div");
+    popup.classList.add("popup");
+    popup.innerHTML = `
+        <span class="close">&times;</span>
+        <img class="popup-img" src="" alt="Popup Image">
+    `;
+    document.body.appendChild(popup);
+
+    const popupImg = popup.querySelector(".popup-img");
+    const close = popup.querySelector(".close");
+
+    // Add event listener to each image
+    images.forEach(image => {
+        image.addEventListener("click", function () {
+            popup.style.display = "flex";
+            popupImg.src = this.src; // Set clicked image in popup
+        });
+    });
+
+    // Close pop-up when clicking close button or outside image
+    close.addEventListener("click", function () {
+        popup.style.display = "none";
+    });
+
+    popup.addEventListener("click", function (event) {
+        if (event.target === popup) {
+            popup.style.display = "none";
+        }
+    });
+});
+
+
 // JavaScript to handle popup functionality
         document.addEventListener('DOMContentLoaded', () => {
             // Select all popup buttons
@@ -86,11 +125,11 @@ function toggleMenu() {
 //Questions Frequentes
 
         $(document).ready(function () {
-            $(".Q_btn").click(function () {
+            $(".FAQ_question").click(function () {
                 let $filter = $(this).closest(".FAQ_question").find(".Q_p");
 
                 // Hide all other .Q_p elements except the current one
-                $(".Q_p").not($filter).slideUp("slow").removeClass("flex-toggle");
+                // $(".Q_p").not($filter).slideUp("slow").removeClass("flex-toggle");
 
                 // Toggle the current .Q_p
                 if ($filter.is(":visible")) {
@@ -102,6 +141,8 @@ function toggleMenu() {
                 }
             });
         });
+
+
 
 
 // blog-news
