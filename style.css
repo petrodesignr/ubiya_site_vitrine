@@ -158,6 +158,26 @@ button img {
     width: 20px;
 }
 
+.Q_btn img {
+    width: 20px;
+    /* Adjust the width as needed */
+    height: 20px;
+    /* Adjust the height to maintain proportions */
+    object-fit: contain;
+    /* Ensures the image fits within the specified size */
+    display: block;
+    /* Removes extra spacing around the image */
+}
+
+.Q_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Adjust to ensure a good fit */
+    border: none;
+    background: transparent;
+}
+
 .hidden {
     display: none;
 }
@@ -2673,6 +2693,7 @@ h1 {
             .home_buttons{
                 display: flex;
                 align-content: flex-end;
+                align-items: center;
                 margin: 5px 0 0 0;
                 gap: 30px;
             }
@@ -3128,9 +3149,15 @@ h1 {
             .d_demo_4 {
                 position: relative;
                 display: flex;
+                align-items: flex-start;
                 right: 0%;
                 bottom: 102%;
             }
+
+            .d_demo_4 button {
+                align-items: center;
+            }
+
 
             .a_4_IA_demo_text {
                 position: relative;
@@ -3201,7 +3228,7 @@ h1 {
             .assist_container_5 .assist_list {
                 position: relative;
                 left: 15%;
-                margin: 5% 0 0 0 !important;
+                margin: 5% 0 0 0;
             }
 
             .a_5_btn {
@@ -3547,7 +3574,7 @@ h1 {
     .assist_container_5 .assist_list {
         position: relative;
         left: 12%;
-        margin: 5% 0 0 0 !important;
+        margin: 5% 0 0 0;
     }
 
     .a_5_demo p {
@@ -4141,7 +4168,7 @@ h1 {
 
     .d_demo_4 button{
         position: relative;
-        bottom: 45px;
+        bottom: 40px;
     }
 
     .a_4_IA_demo_text{
@@ -4164,6 +4191,14 @@ h1 {
         position: relative;
         left: 50px;
     }
+
+    .opt {
+        bottom: 0;
+    }
+
+    .offer_opt {
+        bottom: 0;
+    } 
 
 }
 
@@ -4204,13 +4239,13 @@ h1 {
         right: 90px;
     }
     
-    .opt{
+    /* .opt{
         top: 80px;
     }
 
     .offer_opt {
         top: 80px;
-    }
+    } */
 
 }
 
@@ -4317,7 +4352,23 @@ h1 {
         width: 80px;
         height: 80px;
         border-radius: 40px;
-        top: 100px;
+        top: 70px;
+    }
+
+    .discover_head :first-child{
+        font-size: 30px;
+    }
+
+    .discover_head :nth-child(2){
+        font-size: 24px;
+    }
+
+    .discover_head :nth-child(3){
+        font-size: 20px;
+    } 
+
+    .discover_head :nth-child(5) {
+        font-size: 14px;
     }
 
     .zoom_head {
@@ -4330,7 +4381,7 @@ h1 {
 
     .zoom_text {
         width: 500px;
-        font-size: 14px;
+        font-size: 18px;
         left: 180px;
     }
 
@@ -4338,8 +4389,13 @@ h1 {
         left: 50%;
     }
 
+    .colorful-list li {
+        font-size: 16px;
+    }
+
     .demo {
         left: 0;
+        top: 60px;
     }
 
     .demo_button {
@@ -4348,6 +4404,24 @@ h1 {
     }
     .demo_button a {
         font-size: 16px;
+    }
+
+    .assist_list ul {
+        font-size: 16px;
+    }
+
+    .assist_container_2 .assist_list {
+        position: relative;
+        width: 120%;
+        margin: 7% 0 0 30px;
+    }
+
+    .assist_container_3 .assist_list {
+        bottom: 40px;
+    }
+
+    .a_3_text {
+        bottom: 100px;
     }
 
     .a_2_img_1 {
@@ -4363,20 +4437,274 @@ h1 {
     }
     
     .d_demo_3 {
-        bottom: 145px;
+        bottom: 170px;
     }
 
     .d_demo_4 button {
-        bottom: 60px;
+        bottom: 50px;
     }
 
     .assist_container_5 {
         height: 270px;
     }
 
+    .a_5_demo {
+        position: relative;
+        bottom: 165px;
+    }
+
     .a_5_demo button {
         position: relative;
         top: 90px;
+    }
+
+    .assist_container_5 .assist_p p {
+        width: 40%;
+        margin: 2%;
+    }
+
+    .assist_container_5 .assist_p :last-child {
+        margin-top: 4%;
+    }
+
+    .assist_container_5 .assist_list ul{
+        width: 100%;
+        position: relative;
+        left: 0px;
+    }
+
+    .assist_container_5 .assist_list {
+        margin-top: 2%;
+    }
+
+    .step-number {
+        font-size: 50px;
+    }
+
+    .step h2 {
+        font-size: 20px;
+    }
+
+    .step p {
+        font-size: 16px;
+    }
+
+    .step {
+        width: 330px;
+    }
+
+    .offer_img_2 {
+        right: 300px;
+        bottom: 150px;
+    }
+
+}
+
+@media (min-width: 1920px) {
+#home {
+        background-size: 100%;
+    }
+
+    .home_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        /* height: 100%; */
+        padding: 0px 0px 20px 150px;
+
+    }
+
+    .home_text .p1 {
+        position: relative;
+        top: 30px;
+        font-size: 20px;
+    }
+
+    .highlight {
+        font-size: 30px;
+    }
+
+    button a {
+        font-size: 16px;
+    }
+
+    .home_buttons button a {
+        font-size: 16px;
+        padding: 10px;
+        border-radius: 30px;
+        margin-top: 60px;
+    }
+
+    .home_red_circle_1 {
+        width: 70px;
+        height: 70px;
+        top: 20px;
+    }
+
+    .home_red_circle_2 {
+        width: 35px;
+        height: 35px;
+        left: 120px;
+        top: 20px;
+    }
+
+    .home_turquoise_circle {
+        position: relative;
+        width: 110px;
+        height: 110px;
+        border-radius: 60px;
+        top: 50px;
+    }
+
+    .home_orange_circle {
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+        top: 70px;
+    }
+
+    .discover_head :first-child {
+        font-size: 30px;
+    }
+
+    .discover_head :nth-child(2) {
+        font-size: 24px;
+    }
+
+    .discover_head :nth-child(3) {
+        font-size: 20px;
+    }
+
+    .discover_head :nth-child(5) {
+        font-size: 14px;
+    }
+
+    .zoom_head {
+        font-size: 30px;
+    }
+
+    .ubybox {
+        font-size: 45px;
+    }
+
+    .zoom_text {
+        width: 500px;
+        font-size: 18px;
+        left: 180px;
+    }
+
+    .colorful-list {
+        left: 50%;
+    }
+
+    .colorful-list li {
+        font-size: 16px;
+    }
+
+    .demo {
+        left: 0;
+        top: 60px;
+    }
+
+    .demo_button {
+        padding: 15px;
+        border-radius: 20px;
+    }
+
+    .demo_button a {
+        font-size: 16px;
+    }
+
+    .assist_list ul {
+        font-size: 16px;
+    }
+
+    .assist_container_2 .assist_list {
+        position: relative;
+        width: 120%;
+        margin: 7% 0 0 30px;
+    }
+
+    .assist_container_3 .assist_list {
+        bottom: 40px;
+    }
+
+    .a_3_text {
+        bottom: 100px;
+    }
+
+    .a_2_img_1 {
+        top: 40px;
+    }
+
+    .a_3_img_2 {
+        left: 53%;
+    }
+
+    .d_demo button a {
+        font-size: 16px;
+    }
+
+    .d_demo_3 {
+        bottom: 170px;
+    }
+
+    .d_demo_4 button {
+        bottom: 50px;
+    }
+
+    .assist_container_5 {
+        height: 270px;
+    }
+
+    .a_5_demo {
+        position: relative;
+        bottom: 165px;
+    }
+
+    .a_5_demo button {
+        position: relative;
+        top: 90px;
+    }
+
+    .assist_container_5 .assist_p p {
+        width: 40%;
+        margin: 2%;
+    }
+
+    .assist_container_5 .assist_p :last-child {
+        margin-top: 4%;
+    }
+
+    .assist_container_5 .assist_list ul {
+        width: 100%;
+        position: relative;
+        left: 0px;
+    }
+
+    .assist_container_5 .assist_list {
+        margin-top: 2%;
+    }
+
+    .step-number {
+        font-size: 50px;
+    }
+
+    .step h2 {
+        font-size: 20px;
+    }
+
+    .step p {
+        font-size: 16px;
+    }
+
+    .step {
+        width: 330px;
+    }
+
+    .offer_img_2 {
+        right: 300px;
+        bottom: 150px;
     }
 }
 
