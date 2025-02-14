@@ -1212,7 +1212,7 @@ h1 {
         /* Dotted Path */
 .dotted-path {
     position: absolute;
-    height: 70%;
+    height: 750px;
     width: 1px;
     border-right: 14px dotted #F28C17;
     margin: 0 auto;
@@ -1749,10 +1749,6 @@ h1 {
 
     .step p {
         font-size: 11px;
-    }
-
-    .dotted-path {
-        height: 85%;
     }
 
         /* Section Offer */
@@ -2587,31 +2583,37 @@ h1 {
 
 @media (min-width: 647px) {
     .ubybox {
-            font-size: 35px;
-            position: relative;
-            top: 18px;
-            left: 20px;
-        }
-    
-        .zoom_text {
-            position: relative;
-            left: 45%;
-            bottom: 0px;
-        }
-    
-        .colorful-list {
-            position: relative;
-            left: 60%;
-            bottom: 0px;
-        }
-    
-        .uby_box {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: auto;
-        }
+        font-size: 35px;
+        position: relative;
+        top: 18px;
+        left: 20px;
+    }
+
+    .zoom_text {
+        position: relative;
+        left: 45%;
+        bottom: 0px;
+    }
+
+    .colorful-list {
+        position: relative;
+        left: 60%;
+        bottom: 0px;
+    }
+
+    .uby_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    .dotted-path {
+        height: 650px;
+    }
+
+
 }
 
 /* base styles for tablet (768px) */
