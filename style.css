@@ -1751,6 +1751,10 @@ h1 {
         font-size: 11px;
     }
 
+    .dotted-path {
+        height: 85%;
+    }
+
         /* Section Offer */
 
     .offer_opt_1,
