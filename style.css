@@ -462,24 +462,36 @@ li img {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: auto;
+    width: 100%;
     box-sizing: border-box;
 }
 
-.discover p{
-    font-family: 'comfortaa', sans-serif;
-    font-size: clamp(0.6rem, 3vw, 2.5rem);
-    color: #194051;
-    text-align: left;
-    position: relative;
-    left: 5%;
-    margin-bottom: 5%;
+.discover_p {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    bottom: 10px;
+    gap: 5%;
+    /* flex-grow: 1; */
 }
 
-.discover img{
-    width: 25%;
-    position: absolute;
-    left: 23%;
+.discover_p p{
+    flex-grow: 1;
+    font-family: 'comfortaa', sans-serif;
+    font-size: clamp(12px, 2.5vw, 1.5rem);
+    color: #194051;
+    text-align: right;
+    position: static;
+    width: auto;
+    margin: 0;
+}
+
+.discover_p img{
+    flex-grow: 0;
+    width: auto;
+    max-width: 50%;
+    position: static;
 }
 
 .red_circle{
@@ -488,7 +500,7 @@ li img {
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    left: 25%;
+    /* left: 25%; */
 }
 
 .turquoise_circle{
@@ -1196,6 +1208,7 @@ li img {
 /* Section Installation Process */
 
 .installation-process {
+    position: relative;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
@@ -1475,6 +1488,7 @@ h1 {
 .FAQ_container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background-color: #E7EFF2;
     margin-top: 20px;
     padding-bottom: 30px;
@@ -1511,6 +1525,7 @@ h1 {
 
 .FAQ_question p {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     font-family: 'comfortaa', sans-serif;
     font-weight: lighter;
@@ -1540,11 +1555,18 @@ h1 {
     display: flex;
 }
 
+.Q_nous_container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
 .Q_nous {
     display: flex;
     align-items: center;
-    margin: 0 16px 0 20px;
-
+    justify-content: flex-end;
 }
 
 .orange_circle {
@@ -1560,17 +1582,21 @@ h1 {
     font-family: 'comfortaa', sans-serif;
     font-weight: lighter;
     line-height: 15px;
-    font-size: 12px;
+    font-size: 11px;
     color: #194951;
     z-index: 1;
+}
+
+.contact_btn_container {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .contact_btn{
     font-family: 'comfortaa', sans-serif;
     display: flex;
-    justify-self: end;
+    justify-self: flex-end;
     background-color: #194051;
-    margin-right: 20px;
     padding:5px 5px;
     border-radius: 20px;
 }
@@ -1907,21 +1933,10 @@ h1 {
         margin: 6px 0;
     }
 
-    .discover p {
-        font-size: 15px;
-        left: 5%;
-        margin-bottom: 7%;
-    }
-
-    .discover img {
-        width: 28%;
-        left: 25%;
-    }
-
     .red_circle {
         width: 40px;
         height: 40px;
-        left: 22%;
+        /* left: 22%; */
     }
 
     .turquoise_circle {
@@ -1946,7 +1961,7 @@ h1 {
 
     .a_3_img_1 {
         width: 60px;
-        margin: -10px !important;
+        margin: -10px;
     }
 
     .assist_list {
@@ -2081,6 +2096,10 @@ h1 {
     }
 
     /* Section FAQ */
+    .Q_nous_container{
+        right: 10%;
+    }
+
     .FAQ_question p {
         font-size: 13px;
     }
@@ -2214,7 +2233,7 @@ h1 {
 
 
 @media (min-width: 647px) {
-     .ubybox {
+      .ubybox {
         font-size: 35px;
         position: relative;
         top: 18px;
@@ -2342,14 +2361,11 @@ h1 {
             }
         
             .red_circle {
-                width: 30px;
-                height: 30px;
+                display: none;
             }
         
             .turquoise_circle {
-                width: 120px;
-                height: 120px;
-                border-radius: 60px;
+                display: none;
             }
 
             /* Discover section */
@@ -2361,40 +2377,36 @@ h1 {
 
             .discover_content{
                 display: flex;
-                flex-direction: row;
-                /* justify-content: center; */
-                align-items: center;
-                margin:0 0 0px 20%;
+                left: 0;
+                top: 30px;
+                margin-bottom: 50px;
             }
 
-            .discover{
-                margin: 5% 0;
-                width: auto;
+            .discover {
+                width: 50vw;
+                margin-left: -50px;
             }
 
-            .discover p{
-                font-size: 15px;
-                margin-right: 15% ;
-                margin-bottom: 10%;
+            .discover_p {
+                width: 100%;
             }
 
-            .discover img{
-                position: relative;
-                left: 0px;
-                width: 100px;
+            .discover_p p {
+                font-size: clamp(12px, 2vw, 1.5rem);
             }
 
-            .red_circle{
-                display: none;
+            .discover_p img {
+                max-width: 30%;
             }
 
             .discover_text{
                 position: relative;
+                align-self: flex-end;
                 top: 5px;
-                left: 50px;
+                left: 2%;
                 margin: 0;
                 padding: 0;
-                font-size: 12px;
+                font-size: clamp(12px, 1.5vw, 1.5rem);
             }
 
             .discover_content_block{
@@ -2475,6 +2487,7 @@ h1 {
 
             .zoom_content{ 
                 width: auto;
+                gap: 0;
             }
 
             .ubybox{
@@ -2539,7 +2552,8 @@ h1 {
 
             .assist_list {
                 position: relative;
-                left: 15%;
+                left: 60px;
+                right: 0;
                 margin-bottom: 30px;
                 flex-grow: 1;
                 overflow-wrap: break-word; /* Ensures text doesn't overflow */
@@ -2567,25 +2581,27 @@ h1 {
             }
 
             .d_demo_1 {
+                width: 100%;
                 position: absolute;
                 display: flex;
                 flex-direction: row;
-                right: 20%;
                 top: -30px;
                 align-items: flex-end;
                 gap: 25%;
             }
 
             .d_demo_1 button {
+                position: relative;
                 margin: 0px;
-                justify-self: center;
+                left: 180px;
             }
 
             .d_demo_1 img {
                 width: 300px;
                 position: relative;
                 align-self: flex-end;
-                top: 10px;               
+                top: 10px;  
+                margin-right: 20px;            
             }
 
 
@@ -2641,10 +2657,11 @@ h1 {
             }
 
             .d_demo_2 {
+                width: 100%;
                 display: flex;
                 position: absolute;
                 flex-direction: row-reverse;
-                justify-content: space-evenly;
+                justify-content: flex-end;
                 align-items: flex-end;
                 right: 0;
                 left: 0;
@@ -2654,17 +2671,16 @@ h1 {
             }
 
             .d_demo_2 button {
-                position: relative;
-                margin: 0;
-                top: 6%;
+                justify-self: flex-start;
+                margin: 0 130px -30px 0 ;
             }
 
             .d_demo_2 img {
                 width: 300px;
                 position: relative;
                 margin: 0;
-                right: 8%;
                 top: 40px;
+                left: 15px;
             }
 
             /* third assistant */
@@ -2676,10 +2692,14 @@ h1 {
                 height: 250px;
             }
 
+            .assist_container_3 .assist_p {
+                margin: 10px 0 10px 18px;
+            }
+
             .assist_container_3 .assist_list {
                 position: relative;
                 margin: 0;
-                left: 20%;
+                left: 80px;
                 width: 40vw;
                 justify-self: flex-start;
             }
@@ -2690,6 +2710,14 @@ h1 {
                 bottom: 20%;
             }
 
+            .assist .a_3_img_1 {
+                position: relative;
+                width: 50px;
+                margin: 0;
+                bottom: 30px;
+                left: 15px;
+            }
+
             .a_3_text {
                 position: absolute;
                 bottom: 12%;
@@ -2698,30 +2726,33 @@ h1 {
             }
 
             .d_demo_3 {
+                width: 100%;
                 display: flex;
                 align-items: flex-end;
                 position: absolute;
                 flex-direction: row;
-                justify-content: center;
-                left: 10%;
+                /* justify-content: center; */
+                /* left: 10%; */
                 right: 0;
                 bottom: 0;
-                gap: 20%;
+                gap: 25%;
             }
 
             .d_demo_3 button {
                 position: relative;
                 margin: 0;
-                left: 0;
+                left: 160px;
                 top: 10px;
                 /* justify-self: center; */
             }
 
             .d_demo_3 img {
                 position: relative;
+                align-self: flex-end;
                 width: 300px;
-                margin: 0;
+                justify-self: flex-end;
                 top: 30px;
+                margin-right: 20px;
                 
             }
 
@@ -2815,12 +2846,20 @@ h1 {
                 height: 250px;
             }
 
+            .assist_container_5 .assist img {
+                margin: -15px -15px -15px 0px;
+            }
+
             .assist_container_5 .assist_list {
                 position: relative;
                 margin: 0;
-                left: 20%;
+                left: 90px;
                 width: 40vw;
                 justify-self: flex-start;
+            }
+
+            .assist_container_5 .assist_p {
+                margin: 10px 0 10px 95px;
             }
 
             .assist_container_5 button {
@@ -2905,6 +2944,43 @@ h1 {
                 font-size: 28px;
             }
 
+            /* .offer_img_1{
+                width: 150%;
+            } */
+
+            .ubya_offer{
+                width: 350px;
+                gap: 20px;
+            }
+
+            .ubya_offer :nth-child(1) {
+                font-size: 30px;
+            }
+        
+            .ubya_offer :nth-child(1) span {
+                font-size: 50px;
+            }
+        
+            .ubya_offer :nth-child(2) {
+                font-size: 20px;
+            }
+        
+            .ubya_offer :nth-child(2) span {
+                font-size: 34px;
+            }
+        
+            .ubya_offer :nth-child(3) {
+                font-size: 15px;
+            }
+        
+            .ubya_offer :nth-child(3) span {
+                font-size: 25px;
+            }
+        
+            .ubya_offer :nth-child(4) {
+                font-size: 12px;
+            }
+
             .offer_img_2 {
                 transform: rotate(-10deg);
                 left: 20%;
@@ -2961,9 +3037,14 @@ h1 {
                 font-size: 13px;
             }
 
+            .Q_nous_container {
+                justify-content: center;
+            }
+
             .Q_nous {
                 position: relative;
-                left: 15%;
+                justify-content: center;
+                align-items: center;
             }
         
             .Q_nous p {
@@ -2973,13 +3054,12 @@ h1 {
             .orange_circle {
                 width: 100px;
                 height: 100px;
-                left: 40px;
-                bottom: 10px;
+                /* left: 40px; */
             }
 
             .contact_btn {
                 position: relative;
-                right: 20%;
+                right: 8%;
                 bottom: 20px;
             }
 
@@ -3166,7 +3246,7 @@ h1 {
     }
 
     .home_text button a {
-        font-size: 10px;
+        font-size: 12px;
         margin: 5px 0;
         background-color: #194051;
         color: white;
@@ -3185,35 +3265,9 @@ h1 {
     }
 
     /* discover section */
-
-    .discover_content {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin: 50px 0;
-    }
-
-    .discover {
-        margin: 0;
-        width: auto;
-    }
-
-    .discover p {
-        font-size: 23px;
-    }
-
-    .discover img {
-        position: relative;
-        top: 20px;
-        left: 0px;
-        width: 180px;
-        margin-bottom: 20px;
-    }
-
-    .discover_text {
-        font-size: 18px;
-    }
+ .discover_content {
+    margin-top: 20px;
+ }
 
     .discover_content_block{
     display: flex;
@@ -3222,6 +3276,7 @@ h1 {
     align-items: flex-start;
     flex-wrap: wrap;
     width: 100%;
+    margin-top: 50px;
     }
 
     .discover_content_block::before{
@@ -3247,157 +3302,180 @@ h1 {
     }
 
     /* zoom section */
+    .zoom{
+        padding-bottom: 80px;
+    }
 
     .zoom_content {
-        margin: 20px 0 0 60px;
+        width: 50%;
+        margin: 20px 0 0 20px;
     }
-    /* section assistant */
 
-    .assist_container {
-        margin: 50px;
-        width: 90%;
+    .zoom_head {
+        font-size: 20px;
+        margin-left: 50px;
+    }
+
+    .ubybox {
+        font-size: 40px;
+        left: 0;
+    }
+
+    .zoom_text {
+        font-size: 14px;
+    }
+
+    .colorful-list li{
+        font-size: 14px;
+    }
+
+    .demo_button {
+        top: 50px ;
+        right: 45%;
+    }
+
+    .demo_button a {
+        font-size: 12px;
+    }
+
+
+    /* section assistant */
+    .assistant {
+        margin: 0px 80px 20px 85px;
+    }
+
+    .assist img {
+        width: 120px;
+        margin:-30px -25px -25px;
+    }
+
+    .assist_list {
+        left: 18%;
+        font-size: 14px;
+    }
+
+    .assist_p {
+        margin: 10px 0 10px 105px;
     }
 
     .assist_p p {
-        font-size: 22px !important;
+        font-size: 18px;
+        width: auto;
     }
 
-    .assist_list { 
-        font-size: 12px;
-        line-height: 20px;
+    .assist_p span {
+        font-size: 18px;
     }
 
-    /* first assistance */
-
-    .assist_container_1 .assist_p {
-        margin: 25px 0 0 60px;
+    .d_demo button {
+        font-size: 14px;
     }
 
-    .assist_container_1 .assist_list {
-        margin: 90px 60px 0 -50px;
+    .assist_container_1 {
+        height: 280px;
+        margin-top: 80px;
     }
 
     .d_demo_1 {
-        position: relative;
-        right: 30px;
+        top: -55px;
     }
 
-    .a_1_btn {
-        right: 100%;
+    .d_demo_1 button {
+        width: 175px;
+        margin-bottom: 25px;
+        left: 250px;
     }
 
-    /* seconde assistance */
+    .d_demo_1 img {
+        width: 350px;
+    } 
 
-    .a_2_img_2 {
-        left: 25px;
+    /* second assistant */
+
+    .assist_container_2 {
+        height: 240px;
+        margin-top: 80px;
     }
 
-    .a_2_img_1 {
-        width: 150px !important;
+    .assist_container_2 .assist_column {
+        width: 55%;
     }
 
-    .assist_container_2 .assist_list {
-        margin: 70px 0px 0 30px;
+    .assist_container_2 .assist {
+        width: 100%;
     }
 
-    .assist_container_2 .assist_list ul{
-        width: 150%;
+    .d_demo_2 img {
+        width: 350px;
+        top: 60px;
     }
 
-    .a_2_btn_1 img {
-        left: 100px;
+    .d_demo_2 button {
+        width: 175px;
+    }
+    
+    .assist_container_2 .assist img {
+        justify-self: flex-end;
+        margin: 0px;
+        bottom: -15px;
     }
 
-    /* third assistance */
+    /* third assistant */
 
-    .assist_container_3 .assist_p {
-        top: -10px;
+    .assist_container_3 {
+        height: 280px;
+        margin-top: 80px;
+    }
+
+    .assist_container_2 .assist_column {
+        width: 55%;
     }
 
     .assist_container_3 .assist_list {
-     bottom: 10px;
+        width: 38vw;
+        left: 25%;
+        bottom: 15px;
     }
 
-    .a_3_text {
-        bottom: 70px;
+    .d_demo_3 img {
+        width: 350px;
+        top: 40px;
     }
 
-    .a_3_btn {
-        bottom: 30px;
-        right: 55%;
+    .d_demo_3 button {
+        width: 175px;
     }
-
-    .d_demo_3 {
-        position:relative;
-        left: 210px;
-        bottom: 146px;
+    
+    .assist_container_3 .assist img {
+        width: 80px;
     }
 
     /* forth assistant */
 
-    .assist_container_4 .assist_list {
-        position: relative;
-        bottom: 35px;
-    }
-
-    .a_4_IA_demo_text {
-        bottom: 115px;
-        right: 20px;
+    .assist_container_4 {
+        margin-top: 80px;
     }
 
     .d_demo_4 button {
-        position: relative;
-        bottom: 35px;
+        width: 175px;
     }
 
-    .a_4_IA {
-        display: flex;
-        position: relative;
-        top: -310px;
-        gap: 10px;
-        padding-left: 20px;
+    .a_4_IA_text {
+        width: 28vw;
     }
-
 
     /* fifth assistant */
 
     .assist_container_5 {
-    height: 250px;
-    }
-
-    .assist_container_5 .assist_list {
-        width: 45%;
-        position: relative;
-        left: 120px;
-    }
-
-    .a_5_btn {
-        position: relative;
-        left: 10px;
-        bottom: 20px;
+        margin-top: 80px;
     }
 
     .d_demo_5 button {
-        position: relative;
-        bottom: 0px;
-        top: 70px;
+        width: 175px;
     }
 
-    .d_demo_5_text {
-        position: relative;
-        top: 0px;
-        left: 10px;
-    }
-
-    .d_demo_5_text p {
-        width: 252px;
-        margin: 0% 0 150% 130% !important;
-    }
-
-    .d_demo_5_img {
-        position: relative;
-        right: 50px;
-        bottom: 70px;
+    .d_demo_5_text button {
+        width: 100px;
     }
     
     /* installation process section */
@@ -3485,10 +3563,9 @@ h1 {
 
     /* offer section */
 
-    .offer { 
-        margin-bottom: 100px;
+    .offer_img_2{
+        left: 30%;
     }
-
     .offer_list {
         position: relative;
         width: 38%;
@@ -3498,222 +3575,52 @@ h1 {
 
     .opt {
         position: relative;
-        bottom: 190px;
         left: 50px;
     }
 
     .offer_opt {
         position: relative;
-        bottom: 190px;
         left: 0px;
     }
-}
 
-@media (min-width: 1200px) {
-
-    .assist_container {
-        margin:100px 50px;
-        width: 90%;
+    /* FAQ section */
+    .FAQ_header img {
+        width: 150px;
     }
 
-    .assist_p p {
-        font-size: 22px !important;
+    .FAQ_header p {
+        font-size: 22px;
+        margin: 50px 0 0 0;
     }
 
-    .assist_list {
-        font-size: 15px;
+    .FAQ_header p br {
+        display: none;
+    }
+
+    .FAQ_question p {
+        font-size: 16px;
         line-height: 20px;
     }
 
-    .d_demo img {
-        width: 350px;
+    .orange_circle {
+        width: 120px;
+        height: 120px;
+        left: 55px;
     }
 
-
-    .assist_container_1 .assist img {
-        margin: -25px 0 0 -15px;
+    .Q_nous p {
+        font-size: 25px;
     }
 
-    .assist_container_1 .assist_list {
-        width: 100%;
-        position: relative;
-        right: 60px;
-    }
-
-    .a_1_img {
-        top: 60px;
-    }
-
-    .a_2_img_2{
-        top: 80px;
-    }
-
-    .a_2_img_1{
-        top: 15px;
-    }
-
-    .a_3_img_1{
-        bottom: 10px;
-    }
-
-    .d_demo_3{
-        
-        bottom: 150px;
-    }
-    .a_3_img_2{
-        bottom: -20px;
-        left: 43%;
-    }
-
-    .assist_container_4 {
-        height: 330px;
-    }
-
-    .a_4_IA{
-        position: relative;
-        top: -330px;
-    }
-
-    .a_4_IA img{
-        width: 130px;
-    }
-
-    .a_4_IA_text{
-        position: relative;
-        top: 15px;
-    }
-
-    .d_demo_4{
-        gap: 100px;
-    }
-
-    .d_demo_4 button{
-        position: relative;
-        bottom: 40px;
-    }
-
-    .a_4_IA_demo_text{
-        bottom: 150px;
-    }
-
-    .a_4_IA_demo_text :first-child{
-        font-size: 20px;
-    }
-
-    .a_4_IA_demo_text :last-child{
-        font-size: 12px;
-    }
-
-    .d_demo_5 img {
-        width: 80px;
-    }
-
-    .d_demo_5_text{
-        position: relative;
-        left: 50px;
-    }
-
-    .opt {
-        bottom: 0;
-    }
-
-    .offer_opt {
-        bottom: 0;
-    } 
-
-}
-
-@media (min-width: 1280px) {
-
-    .zoom_content{
-        margin: 0 0 0 150px;
-    }
-
-    .a_3_img_2 {
-        left: 47%;
-    }
-
-    .d_demo_3 {
-        bottom: 155px;
-    }
-
-    .a_4_IA {
-        top: -350px;
-    }
-
-    .a_4_IA_text p {
-        width: 250px;
-        font-size: 10px;
-    }
-
-    .assist_container_5 {
-        height: 260px;
-    }
-
-    .d_demo_5 button {
-        position: relative;
-        top: 80px
-    }
-
-    .offer_img_2{
-        width: 140px;
-        right: 90px;
-    }
-    
-    /* .opt{
-        top: 80px;
-    }
-
-    .offer_opt {
-        top: 80px;
-    } */
-
-}
-
-@media (min-width: 1366px) {
-    .discover_content_block::before {
-        top: 160px;
-    }
-
-    .zoom {
-        padding-bottom: 60px;
-    }
-
-    .colorful-list {
-        width: 300px;
-    }
-
-    .d_demo_3 {
-        bottom:160px;
-    }
-
-    .a_3_img_2{
-        left: 51%;
-    }
-
-    .d_demo_4 button {
-        bottom: 50px;
-    }
-
-    .offer_img_1 {
-        left: 0;
-    }
-
-    .ubya_offer {
-        margin: 170px 0 0 0%;
-    }
-
-    .offer_img_2 {
-        right: 300px;
-    }
-
-    .offer_list {
-        width: 30%;
-        top: 120px;
+    .contact_btn a {
+        font-size: 18px;
     }
 }
+
 
 @media (min-width: 1440px) {
+
+    /* home section */
 
     #home {
         background-size: 100%;
@@ -3723,7 +3630,6 @@ h1 {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        /* height: 100%; */
         padding: 0px 0px 20px 150px;
         
     }
@@ -3776,6 +3682,17 @@ h1 {
         top: 70px;
     }
 
+    /* discover section */
+
+    .discover_p {
+        gap: 2%;
+    }
+
+    .discover_panel img {
+        width: 140px;
+        margin: 30px 0 0 0px;
+    }
+
     .discover_head :first-child{
         font-size: 30px;
     }
@@ -3791,9 +3708,17 @@ h1 {
     .discover_head :nth-child(5) {
         font-size: 14px;
     }
+    
+    /* zoom section */
+
+    .zoom {
+        padding-bottom: 120px;
+    }
 
     .zoom_head {
+        width: 500px;
         font-size: 30px;
+        margin-left: 80px;
     }
     
     .ubybox {
@@ -3803,7 +3728,8 @@ h1 {
     .zoom_text {
         width: 500px;
         font-size: 18px;
-        left: 180px;
+        left: 240px;
+        margin: 30px 0;
     }
 
     .colorful-list {
@@ -3827,76 +3753,110 @@ h1 {
         font-size: 16px;
     }
 
-    .assist_list ul {
-        font-size: 16px;
+    /* assistant section */
+
+    .assistant_head {
+        font-size: 25px;
     }
 
-    .assist_container_2 .assist_list {
-        position: relative;
-        width: 120%;
-        margin: 7% 0 0 30px;
+    .assist_p p{
+        font-size: 24px;
+        line-height: 30px;
     }
 
-    .assist_container_3 .assist_list {
-        bottom: 40px;
+    .assist_p span{
+        font-size: 24px;
     }
 
-    .a_3_text {
-        bottom: 100px;
+    .assist_list {
+        font-size: 20px;
+        left: 15%;
     }
 
-    .a_2_img_1 {
-        top: 40px;
+    .d_demo button {
+        font-size: 18px;
     }
 
-    .a_3_img_2 {
-        left: 53%;
+    .assist_container_1 {
+        height: 380px;
     }
 
-    .d_demo button a {
-        font-size: 16px;
+    .d_demo_1 button {
+        width: 218px;
+        left: 320px;
     }
-    
-    .d_demo_3 {
-        bottom: 170px;
+
+    .d_demo_1 img,
+    .d_demo_2 img,
+    .d_demo_3 img {
+        width: 450px;
+    }
+
+    .assist_container_2 {
+        height: 350px;
+    }
+
+    .assist_container_2 .assist img {
+        width: 140px;
+        bottom: -5px;
+    }
+
+    .d_demo_2 button {
+        width: 218px;
+        right: 250px;
+    }
+
+    .a_2_btn_1,
+    .a_3_btn,
+    .a_5_btn {
+        width: 60px;
+    }
+
+    .assist_container_3 {
+        height: 350px;
+    }
+
+    .d_demo_3 button {
+        width: 218px;
+    }
+
+    .a_3_text p {
+        font-size: 20px;
+    }
+
+    .a_3_text span {
+        font-size: 18px;
+    }
+
+    .assist_container_4 {
+        height: 400px;
     }
 
     .d_demo_4 button {
-        bottom: 50px;
+        width: 218px;
     }
 
-    .assist_container_5 {
-        height: 270px;
+    .a_4_IA img {
+        width: 160px;
     }
 
-    .d_demo_5 {
-        position: relative;
-        bottom: 165px;
+    .a_4_IA_text p {
+        font-size: 12px;
     }
 
-    .d_demo_5 button {
-        position: relative;
-        top: 90px;
+    .a_4_IA_text {
+        gap: 80px;
     }
 
-    .assist_container_5 .assist_p p {
-        width: 40%;
-        margin: 2%;
+    .a_4_IA_demo_text p {
+        font-size: 20px;
     }
 
-    .assist_container_5 .assist_p :last-child {
-        margin-top: 4%;
+    .a_4_IA_demo_text span {
+        font-size: 18px;
     }
 
-    .assist_container_5 .assist_list ul{
-        width: 100%;
-        position: relative;
-        left: 0px;
-    }
-
-    .assist_container_5 .assist_list {
-        margin-top: 2%;
-    }
+    /* Installation section */
 
     .step-number {
         font-size: 50px;
@@ -3916,12 +3876,12 @@ h1 {
 
     .offer_img_2 {
         right: 300px;
-        bottom: 150px;
+        /* bottom: 150px; */
     }
 
 }
 
-@media (min-width: 1920px) {
+/* @media (min-width: 1920px) {
 #home {
         background-size: 100%;
     }
@@ -3930,7 +3890,6 @@ h1 {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        /* height: 100%; */
         padding: 0px 0px 20px 150px;
 
     }
@@ -4127,5 +4086,5 @@ h1 {
         right: 300px;
         bottom: 150px;
     }
-}
+} */
 
