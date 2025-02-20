@@ -815,7 +815,7 @@ li img {
 }
 
 .assist_container button{
-    z-index: 99;
+    z-index: 999;
 }
 
 .assist {
@@ -1186,23 +1186,17 @@ li img {
 }
 
         /* Close button styling */
-.close-popup {
+    .d_demo_5_text .audio-popup button {
+        width: auto;
+    position: relative;
+    right: 0;
+    background-color: #f02525;
     margin-top: 10px;
-    padding: 5px 10px;
-    background-color: #f44336;
-    color: white;
+    padding: 10px;
+    color: whitesmoke;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-}
-
-.close-popup:hover {
-    background-color: #d32f2f;
-}
-
-#triggerPopup:hover {
-    background-color: #399972;
-    border-radius: 10px;
 }
 
 /* Section Installation Process */
@@ -2482,27 +2476,33 @@ h1 {
                 flex-direction: row;
                 align-items: center;
                 justify-content: center;
-                padding-bottom: 40px;
+                padding-bottom: 80px;
             }
 
-            .zoom_content{ 
-                width: auto;
-                gap: 0;
+            .zoom_content {
+                /* width: 50%; */
+                margin: 20px 0 0 20px;
             }
-
-            .ubybox{
+        
+            .zoom_head {
+                font-size: 16px;
+                margin-left: 0px;
+            }
+        
+            .ubybox {
                 font-size: 35px;
-                top: 18px;
+                left: 0;
             }
-
+        
             .zoom_text {
-                position: relative;
-                left: 45%;
+                width: 40vw;
+                font-size: 14px;
+                left: 90px;
             }
 
             .colorful-list {
                 position: relative;
-                left: 60%;
+                left: 130px;
             }
 
             .uby_box {
@@ -2511,11 +2511,13 @@ h1 {
                 justify-content: center;
                 align-items: center;
                 width: auto;
+                margin-right: 50px;
+                margin-top: 50px;
             }
 
             .white_circle_uby_box {
-                width: 200px;
-                height: 200px;
+                width: 160px;
+                height: 160px;
                 border-radius: 50%;
                 background-color: white;
             }
@@ -2533,14 +2535,14 @@ h1 {
 
             .uby_box img {
                 position: relative;
-                width: 65%;
+                width: 200px;
                 left: 0px;
             }
 
             .demo_button {
                 position: relative;
-                top: 25px;
-                right: 40%;
+                top: 50px;
+                right: 55%;
                 width: auto;
             }
         
@@ -2764,6 +2766,7 @@ h1 {
                 flex-direction: row-reverse;
                 width: 100%;
                 height: 280px;
+                margin-bottom: 80px;
             }
 
             .assist_container_4 .assist {
@@ -2847,7 +2850,7 @@ h1 {
             }
 
             .assist_container_5 .assist img {
-                margin: -15px -15px -15px 0px;
+                margin: -25px -15px 0px 0px;
             }
 
             .assist_container_5 .assist_list {
@@ -3323,15 +3326,26 @@ h1 {
 
     .zoom_text {
         font-size: 14px;
+        left: 160px;
     }
 
     .colorful-list li{
         font-size: 14px;
+        left: 20%;
+    }
+
+    .white_circle_uby_box {
+        width: 190px;
+        height: 190px;
+    }
+
+    .uby_box img {
+        width: 250px;
     }
 
     .demo_button {
         top: 50px ;
-        right: 45%;
+        right: 55%;
     }
 
     .demo_button a {
@@ -3468,6 +3482,14 @@ h1 {
 
     .assist_container_5 {
         margin-top: 80px;
+    }
+
+    .assist_container_5 .assist_p {
+        margin: 10px 0 10px 115px;
+    }
+
+    .assist_container_5 .assist_list {
+        left: 115px;
     }
 
     .d_demo_5 button {
@@ -3713,6 +3735,7 @@ h1 {
 
     .zoom {
         padding-bottom: 120px;
+        padding-left: 80px;
     }
 
     .zoom_head {
@@ -3733,11 +3756,15 @@ h1 {
     }
 
     .colorful-list {
-        left: 50%;
+        left: 180px;
     }
 
     .colorful-list li {
         font-size: 16px;
+    }
+
+    .uby_box {
+        margin: 0;
     }
 
     .demo {
@@ -3746,14 +3773,19 @@ h1 {
     }
 
     .demo_button {
-        padding: 15px;
+        padding: 10px;
         border-radius: 20px;
+        right: 40%;
     }
     .demo_button a {
         font-size: 16px;
     }
 
     /* assistant section */
+
+    .assistant {
+        margin: 0px 130px 20px 135px;
+    }
 
     .assistant_head {
         font-size: 25px;
@@ -3794,6 +3826,7 @@ h1 {
 
     .assist_container_2 {
         height: 350px;
+        margin-top: 120px;
     }
 
     .assist_container_2 .assist img {
@@ -3814,10 +3847,16 @@ h1 {
 
     .assist_container_3 {
         height: 350px;
+        margin-top: 180px;
+    }
+
+    .assist_container_3 button {
+        left: 45%;
     }
 
     .d_demo_3 button {
         width: 218px;
+        left: 260px;
     }
 
     .a_3_text p {
@@ -3830,6 +3869,11 @@ h1 {
 
     .assist_container_4 {
         height: 400px;
+        margin-top: 120px;
+    }
+
+    .assist_container_4 .assist img {
+        margin: -30px 35px 10px;
     }
 
     .d_demo_4 button {
@@ -3856,6 +3900,26 @@ h1 {
         font-size: 18px;
     }
 
+    .assist_container_5 {
+        margin-top: 120px;
+        height: 320px;
+    }
+
+    .assist_container_5 .a_5_btn {
+        left: 55%;
+    }
+
+    .d_demo_5 button {
+        width: 218px;
+        left: 20%;
+    }
+
+    .d_demo_5_text button {
+        width: 130px;
+        left: 0;
+    }
+
+
     /* Installation section */
 
     .step-number {
@@ -3874,10 +3938,44 @@ h1 {
         width: 330px;
     }
 
+    /* offer section */
+
+    .offer {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 130px 25px 130px;
+    }
+
     .offer_img_2 {
-        right: 300px;
+        right: 350px;
         /* bottom: 150px; */
     }
+
+    .offer_list {
+        left: 100px;
+    }
+
+    /* FAQ section */
+
+    .FAQ_header p {
+        font-size: 25px;
+        margin: 55px 0 0 0;
+    }
+
+    .orange_circle {
+        width: 120px;
+        height: 120px;
+        left: 60px;
+    }
+
+    .contact_btn {
+        right: 16%;
+    }
+
+    .Q_nous p {
+        font-size: 28px;
+    }
+
 
 }
 
