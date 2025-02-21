@@ -418,6 +418,7 @@ li img {
 
 .home_text .p1{
     font-family: 'comfortaa', sans-serif;
+    font-weight: lighter;
     font-size: clamp(0.6rem, 3vw, 2.5rem);
     line-height: 15px;
     color: #194051;
@@ -588,11 +589,12 @@ li img {
 }
 
 .discover_head :nth-child(5) {
-    font-family: 'comfortaa', sans-serif;
+    font-family: 'IDGrotesk', sans-serif;
     text-align: left;
     align-self: flex-end;
     color: #194951;
     font-size: clamp(0.5rem, 2vw, 2.5rem);
+    line-height: 12px;
     /* margin-top: 20px; */
 }
 
@@ -615,7 +617,7 @@ li img {
     top: 10px;
 }
 .zoom_text{
-    /* font-size: clamp(0.5rem, 2vw, 2.5rem); */
+    font-family: 'IDGrotesk', sans-serif;
     margin: 10px 0 10px 0;
     font-size: 10px;
 }
@@ -627,6 +629,7 @@ li img {
 }
 
 .colorful-list li {
+    font-family: 'IDGrotesk', sans-serif;
     font-size: 12px;
     position: relative;
     padding-left: 25px;
@@ -1249,7 +1252,7 @@ h1 {
 .step-number {
     position: absolute;
     top: -22px;
-    left: -6px;
+    left: -10px;
     font-size: 52px;
     font-weight: bold;
     color: #F28C17;
@@ -1259,7 +1262,7 @@ h1 {
 
 .step-2 span, .step-3 span, .step-4 span {
     top: -22px;
-    left: -16px;
+    left: -25px;
 }
 
 .step h2 {
@@ -1326,14 +1329,14 @@ h1 {
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 15px 10px;
     border-radius: 10px;
     text-align: center;
     z-index: 1;
     align-self: center;
-    gap: 10px;
+    gap: 12px;
     text-align: center;
-    margin: 0px 0 0 5px;
+    margin-left: 5px;
 }
 
 .ubya_offer :nth-child(1) {
@@ -1353,17 +1356,21 @@ h1 {
 }
 
 .ubya_offer :nth-child(3) {
-    font-size: 10px;
+    font-weight: bold;
+    font-size: 13px;
+    /* margin-left: 5px; */
     color: #1BABB6;
 }
 
 .ubya_offer :nth-child(3) span {
-    font-size: 20px;
+    font-weight: normal;
+    font-size: 22px;
     color: #194051;
 }
 
 .ubya_offer :nth-child(4) {
     font-size: 8px;
+    margin-top: -8px;
 }
 
 .offer_img_2{
@@ -1512,9 +1519,9 @@ h1 {
 
 .FAQ_question {
     background-color: white;
-    border-radius: 8px;
-    padding: 5px 10px 5px 10px;
-    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px 16px;
+    margin-bottom: 15px;
 }
 
 .FAQ_question p {
@@ -1534,15 +1541,21 @@ h1 {
 
 .Q_p {
     display: none;
+    display: flex;
+    flex-direction: column;
 }
 
-.Q_p p{
+.Q_p p, .Q_p ul {
     font-family: 'comfortaa', sans-serif;
     font-weight: lighter;
     margin-top: 10px;
     line-height: 20px;
     font-size: 9px;
     color: #194951d2;
+}
+
+.Q_p ul {
+    margin-left: 20px;
 }
 
 .flex-toggle {
@@ -1884,7 +1897,7 @@ h1 {
     }
 
     /* Section FAQ */
-        .FAQ_question p {
+        .FAQ_question p, .Q_p ul {
             font-size: 11px;
         }
 
@@ -2042,7 +2055,8 @@ h1 {
 
     /* Section Offer */
     .ubya_offer {
-        padding: 30px;
+        padding: 30px 25px;
+        margin-left: 15px;
     }
 
     .ubya_offer :nth-child(1) {
@@ -2062,11 +2076,11 @@ h1 {
     }
 
     .ubya_offer :nth-child(3) {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .ubya_offer :nth-child(3) span {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .ubya_offer :nth-child(4) {
@@ -2091,10 +2105,18 @@ h1 {
 
     /* Section FAQ */
     .Q_nous_container{
+        display: flex;
         right: 10%;
+        justify-content: center;
     }
 
-    .FAQ_question p {
+    .Q_nous {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .FAQ_question p, .Q_p ul {
         font-size: 13px;
     }
 
@@ -2106,6 +2128,12 @@ h1 {
         width: 60px;
         height: 60px;
         left: 42px;
+    }
+
+    .contact_btn_container {
+    display: flex;
+    justify-content: center;
+    margin-left: 220px;
     }
 
     .contact_btn a {
@@ -2143,9 +2171,20 @@ h1 {
         width: 30%;
         margin: 0;
     }
+
+    .discover_head :nth-child(5){
+        font-size: 12px;
+        line-height: 15px;
+    }
 }
 
 @media (min-width: 600px) {
+
+
+    .discover_head :nth-child(5){
+        font-size: 12px;
+        line-height: 15px;
+    }
 
     /* zoom section */
 
@@ -2383,10 +2422,13 @@ h1 {
 
             .discover_p {
                 width: 100%;
+                gap: 2%;
+                margin: 25px 0;
             }
 
             .discover_p p {
                 font-size: clamp(12px, 2vw, 1.5rem);
+                margin-top: -5px;
             }
 
             .discover_p img {
@@ -2407,7 +2449,7 @@ h1 {
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
-                align-items: center;
+                align-items: flex-start;
                 gap: 30px;
                 position: relative;
             }
@@ -2497,6 +2539,7 @@ h1 {
             .zoom_text {
                 width: 40vw;
                 font-size: 14px;
+                line-height: 20px;
                 left: 90px;
             }
 
@@ -2542,7 +2585,7 @@ h1 {
             .demo_button {
                 position: relative;
                 top: 50px;
-                right: 55%;
+                right: 60%;
                 width: auto;
             }
         
@@ -2941,6 +2984,7 @@ h1 {
             .offer {
                 position: relative;
                 height: auto;
+                margin-bottom: -40px;
             }
 
             .offer_head {
@@ -2953,7 +2997,8 @@ h1 {
 
             .ubya_offer{
                 width: 350px;
-                gap: 20px;
+                gap: 25px;
+                margin-left: 20px;
             }
 
             .ubya_offer :nth-child(1) {
@@ -2969,19 +3014,20 @@ h1 {
             }
         
             .ubya_offer :nth-child(2) span {
-                font-size: 34px;
+                font-size: 40px;
             }
         
             .ubya_offer :nth-child(3) {
-                font-size: 15px;
+                font-size: 20px;
             }
         
             .ubya_offer :nth-child(3) span {
-                font-size: 25px;
+                font-size: 30px;
             }
         
             .ubya_offer :nth-child(4) {
                 font-size: 12px;
+                margin-top: -20px;
             }
 
             .offer_img_2 {
@@ -3060,9 +3106,14 @@ h1 {
                 /* left: 40px; */
             }
 
+            .contact_btn_container {
+            display: flex;
+            justify-content: center;
+            margin-left: 300px;
+            }
+
             .contact_btn {
                 position: relative;
-                right: 8%;
                 bottom: 20px;
             }
 
@@ -3130,6 +3181,7 @@ h1 {
        flex-direction: row;
        justify-content: center;
        align-items: center;
+       font-family: 'IDGrotesk', sans-serif;
        font-size: 16px;
        list-style: none;
    }
@@ -3150,7 +3202,7 @@ h1 {
        flex-direction: row;
        justify-content: center;
        align-items: center;
-       gap: 20px;
+       gap: 10px;
    }
 
    .d_contact li {
@@ -3158,9 +3210,10 @@ h1 {
        flex-direction: row;
        justify-content: center;
        align-items: center;
+       font-family: 'IDGrotesk', sans-serif;
        font-size: 16px;
        list-style: none;
-       gap: 5px;
+       gap: 10px;
    }
 
    .d_contact li a {    
@@ -3302,6 +3355,7 @@ h1 {
 
     .discover_head :nth-child(5){
         font-size: 12px;
+        line-height: 15px;
     }
 
     /* zoom section */
@@ -3619,9 +3673,9 @@ h1 {
         display: none;
     }
 
-    .FAQ_question p {
+    .FAQ_question p, .Q_p ul {
         font-size: 16px;
-        line-height: 20px;
+        line-height: 22px;
     }
 
     .orange_circle {
@@ -3632,6 +3686,12 @@ h1 {
 
     .Q_nous p {
         font-size: 25px;
+    }
+
+    .contact_btn_container {
+    display: flex;
+    justify-content: center;
+    margin-left: 440px;
     }
 
     .contact_btn a {
@@ -3961,6 +4021,12 @@ h1 {
         font-size: 25px;
         margin: 55px 0 0 0;
     }
+
+        .FAQ_question p,
+        .Q_p ul {
+            font-size: 22px;
+            line-height: 30px;
+        }
 
     .orange_circle {
         width: 120px;
