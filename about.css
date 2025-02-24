@@ -1,14 +1,13 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 main {
     padding: 25px;
-    margin-top: 8vh;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     flex: 1;
@@ -45,23 +44,25 @@ h1 {
     
 }
 
-.about_text :nth-child(1) {
+.about_text h1 {
     font-family: 'comfortaa', sans-serif;
     color: #1BABB5 ;
     margin: 5px 0;
-    font-size: 18px;
+    text-align: left;
+    /* font-size: 18px; */
 }
 
 .about_text :nth-child(2) {
     font-family: 'comfortaa', sans-serif;
     color: #194051;
-    font-size: 11px;
+    line-height: 20px;
+    font-size: clamp(12px, 1vw, 16px);
 }
 
-.about_text li{
+.about_text li {
     font-family: 'comfortaa', sans-serif;
     color: #194051 !important;
-    font-size: 11px !important;
+    font-size: clamp(12px, 1vw, 16px) !important;
 }
 
 .about_text ul{

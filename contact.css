@@ -8,7 +8,6 @@ body {
 
 main {
     padding: 25px 0;
-    margin-top: 8vh;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     flex: 1;
@@ -186,6 +185,16 @@ main {
 .textbox input:focus,
 .textbox textarea:focus {
     outline: none;
+}
+
+.textbox> :is(input:focus, .has-value)~label {
+    translate: 0px -33px;
+    scale: 0.8;
+}
+
+.textbox> :is(textarea:focus, .has-value)~label {
+    translate: 0px -40px;
+    scale: 0.8;
 }
 
 .textbox :is(label) {
