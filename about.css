@@ -22,16 +22,20 @@ main {
 .about_header h1 {
     margin-top: 6px;
     font-family: 'comfortaa', sans-serif;
-    text-align: center;
+    text-align: left;
     color: #194051;
+    flex: 1;
 }
 
 .about_header img {
     width: 100%;
+    height: auto;
 }
 
 .about_logo {
-    width: 100px;
+    width: 25vw;
+    max-width: 200px;
+    min-width: 100px;
 }
 
 h1 {
@@ -67,4 +71,32 @@ h1 {
 
 .about_text ul{
     margin-left: 25px;
+}
+
+
+@media (min-width: 768px) {
+      .about_logo {
+        width: 25vw;
+        max-width: 500px;
+        min-width: 250px;
+      }
+
+      .about_text {
+        width: 55vw;
+      }
+
+      .about_1{
+        position: absolute;
+        top: 150px;
+      }
+
+      .about_2{
+        position: relative;
+        justify-self: right;
+      }
+
+      .about_4{
+        position: relative;
+        justify-self: right;
+      }
 }
