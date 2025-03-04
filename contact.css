@@ -260,23 +260,6 @@ label[for=message] {
     }
 }
 
-.spinner {
-    position: absolute;
-    top: 50%;
-    right: 16px;
-    translate: 0 -50%;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    border: 3px solid rgb(255 255 255 / 14%);
-    border-top-color: #f7f7f7;
-    opacity: 0;
-    animation: spin 1s infinite linear;
-}
-
-.spinner.visible {
-    opacity: 1;
-}
 
 /* for the button*/
 

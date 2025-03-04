@@ -1,5 +1,4 @@
 const inputs = document.querySelectorAll("input"),
-  spinner = document.querySelectorAll(".spinner"),
   button = document.querySelector("button");
 
 function handleTextAreaInput() {
@@ -25,20 +24,19 @@ function handleTextAreaInput() {
 
 handleTextAreaInput();
 
-[...inputs].map((elem, index) => {
+[...inputs].map((elem) => {
   elem.addEventListener('input', (e) => {
-    spinner[index].classList.add("visible")
     let trimmedValue = e.target.value;
     if (e.target.type !== 'text') {
       trimmedValue = e.target.value.trim();
       e.target.value = trimmedValue;
     }
     e.target.classList.toggle("has-value", trimmedValue)
-    setTimeout(() => {spinner[index].classList.remove("visible")}, 500)
-    switch(e.target.type) {
+
+    switch (e.target.type) {
       case 'text':
         const reText = /^[a-zA-Z\s]+$/ // allow spaces in text input
-        if(e.target.value.length >= 2 && e.target.value.length <= 30 && e.target.value.match(reText)) {
+        if (e.target.value.length >= 2 && e.target.value.length <= 30 && e.target.value.match(reText)) {
           e.target.classList.add("valid")
         }
         else {
@@ -55,7 +53,7 @@ handleTextAreaInput();
         }
         break
       case 'tel':
-        const phoneRegex = /^\+?[1-9]\d{1,14}$/; // Format E.164 (supporte les numéros internationaux)
+        const phoneRegex = /^\+?[1-9]\d{1,14}$/; // Format E.164 (support international numbers)
         if (phoneRegex.test(trimmedValue)) {
           e.target.classList.add('valid')
         } else {
@@ -67,7 +65,7 @@ handleTextAreaInput();
         break
     }
 
-    checkAllInputsValidity(); 
+    checkAllInputsValidity();
   })
 })
 
@@ -91,11 +89,9 @@ function checkAllInputsValidity() {
     button.disabled = true
   }
 }
+
 const buttonS = document.querySelector('button.send');
 buttonS.addEventListener('click', (e) => {
   e.preventDefault();
   alert("working");
-})
-
-
-
+});
