@@ -38,7 +38,7 @@ handleTextAreaInput();
     switch(e.target.type) {
       case 'text':
         const reText = /^[a-zA-Z\s]+$/ // allow spaces in text input
-        if(e.target.value.length >= 2 && e.target.value.length <= 16 && e.target.value.match(reText)) {
+        if(e.target.value.length >= 2 && e.target.value.length <= 30 && e.target.value.match(reText)) {
           e.target.classList.add("valid")
         }
         else {
@@ -55,13 +55,14 @@ handleTextAreaInput();
         }
         break
       case 'tel':
-        if (!isNaN(trimmedValue) && trimmedValue.length === 10) {
+        const phoneRegex = /^\+?[1-9]\d{1,14}$/; // Format E.164 (supporte les numéros internationaux)
+        if (phoneRegex.test(trimmedValue)) {
           e.target.classList.add('valid')
-        }
-        else {
+        } else {
           e.target.classList.remove('valid')
         }
         break
+
       default:
         break
     }
