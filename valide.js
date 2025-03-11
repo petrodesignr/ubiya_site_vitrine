@@ -1,4 +1,4 @@
-const inputs = document.querySelectorAll("input"),
+const inputs = document.querySelectorAll("input:not([name='adresse'])"),
   button = document.querySelector("button");
 
 function handleTextAreaInput() {
@@ -53,7 +53,7 @@ handleTextAreaInput();
         }
         break
       case 'tel':
-        const phoneRegex = /^\+?[1-9]\d{1,14}$/; // Format E.164 (support international numbers)
+        const phoneRegex = /^(?:\+|00)[1-9]\d{1,14}$/; // Format E.164 (support international numbers)
         if (phoneRegex.test(trimmedValue)) {
           e.target.classList.add('valid')
         } else {
@@ -90,8 +90,37 @@ function checkAllInputsValidity() {
   }
 }
 
-const buttonS = document.querySelector('button.send');
-buttonS.addEventListener('click', (e) => {
-  e.preventDefault();
-  alert("working");
+// const buttonS = document.querySelector('button.send');
+// buttonS.addEventListener('click', (e) => {
+//   e.preventDefault();
+//   alert("working");
+// });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('contactForm');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const formData = new FormData(form);
+    const jsonData = Object.fromEntries(formData.entries());
+    try {
+      const response = await fetch('http://localhost:5005/sendmail/sendmail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(jsonData)
+      });
+
+      if (response.ok) {
+        alert("Formulaire envoyé avec succès !");
+        form.reset();
+      } else {
+        alert("Erreur lors de l'envoi du formulaire.");
+      }
+    } catch (error) {
+      console.error("Erreur:", error);
+      alert("Une erreur est survenue. Vérifie ta connexion.");
+    }
+  });
 });
+

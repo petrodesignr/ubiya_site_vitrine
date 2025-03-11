@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /typos_ubya/
+Allow: /
+
+Sitemap: https://www.ubya.com/sitemap.xml

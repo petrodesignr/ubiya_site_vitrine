@@ -1109,6 +1109,7 @@ li img {
 
         /* Scrollable Popup Content */
         .popup-content {
+            font-family: 'comfortaa', sans-serif;
             background: white;
             padding: 20px;
             border-radius: 8px;
@@ -1658,6 +1659,10 @@ h1 {
     color: white;
 }
 
+.category-badge {
+    color: #44B483;
+}
+
 .newscrunch_category_5 {
     /* Solutions Technologiques */
     color:#1babb6;
@@ -1699,6 +1704,10 @@ h1 {
 
 .newscrunch_category_7.read-more-btn {
     background-color: #ea5238;
+}
+
+.category-badge.read-more-btn {
+    color: #44B483;
 }
 
 /* Footer Container */
@@ -2422,7 +2431,7 @@ h1 {
             .discover_p {
                 width: 100%;
                 gap: 2%;
-                margin: 25px 0;
+                margin: 25px 0 0 0;
             }
 
             .discover_p p {
@@ -2589,6 +2598,10 @@ h1 {
             }
         
             /* Section Assistant */
+
+            .popup-content {
+                font-size: 16px;
+            }
 
             .assist img {
                 width: 90px;
@@ -3630,7 +3643,7 @@ h1 {
     top: 46%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
+    width: 900px;
     /* Adjust width as needed */
     z-index: 1;
     /* Keeps it behind the steps */
@@ -3700,6 +3713,9 @@ h1 {
 
 
 @media (min-width: 1440px) {
+    #desktop-nav{
+        padding: 15px 150px;
+    }
 
     /* home section */
 
@@ -3768,6 +3784,7 @@ h1 {
     .discover_p {
         gap: 2%;
     }
+
 
     .discover_panel img {
         width: 140px;
@@ -3841,6 +3858,9 @@ h1 {
     }
 
     /* assistant section */
+    .popup-content {
+        font-size: 20px;
+    }
 
     .assistant {
         margin: 0px 130px 20px 135px;
@@ -3980,6 +4000,9 @@ h1 {
 
 
     /* Installation section */
+    .dot-path {
+        width: 1100px;
+    }
 
     .step-number {
         font-size: 50px;
@@ -4046,7 +4069,24 @@ h1 {
 }
 
 @media (min-width: 1920px) {
-#home {
+
+    #desktop-nav{
+        padding: 14px 200px;
+    }
+
+    .nav-links {
+        font-size: 22px;
+    }
+
+    .d_contact li {
+        font-size: 22px;
+    }
+
+    .d_contact img {
+        width: 45px;
+    }
+
+    #home {
         background-size: 100%;
     }
 
@@ -4054,201 +4094,506 @@ h1 {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        padding: 0px 0px 20px 350px;
+        padding: 0px 0px 40px 350px;
 
     }
 
     .home_text .p1 {
         position: relative;
-        top: 30px;
-        font-size: 20px;
+        top: 35px;
+        font-size: 30px;
+        line-height: 45px;
     }
 
     .highlight {
-        font-size: 30px;
-    }
-
-    button a {
-        font-size: 16px;
+        font-size: 45px;
     }
 
     .home_buttons button a {
-        font-size: 16px;
+        font-size: 20px;
         padding: 10px;
         border-radius: 30px;
         margin-top: 60px;
     }
 
     .home_red_circle_1 {
-        width: 70px;
-        height: 70px;
-        top: 20px;
+        width: 120px;
+        height: 120px;
+        border-radius: 80px;
+        top: 25px;
     }
 
     .home_red_circle_2 {
-        width: 35px;
-        height: 35px;
+        width: 45px;
+        height: 45px;
         left: 120px;
         top: 20px;
     }
 
     .home_turquoise_circle {
         position: relative;
-        width: 110px;
-        height: 110px;
-        border-radius: 60px;
+        width: 160px;
+        height: 160px;
+        border-radius: 80px;
         top: 50px;
     }
 
     .home_orange_circle {
-        width: 80px;
-        height: 80px;
-        border-radius: 40px;
-        top: 70px;
+        width: 120px;
+        height: 120px;
+        border-radius: 60px;
+        top: 80px;
+    }
+
+    .discover_p {
+        width: 100%;
+        gap: 2%;
+        margin: 25px 0 0 0;
+    }
+
+    .discover_p p {
+        font-size: 30px;
+    }
+
+    .discover_p img {
+        max-width: 33%;
+    }
+
+    .discover_text {
+        font-size: 30px;
+    }
+
+    .discover_panel img {
+        width: 180px;
+        margin: 30px 0 0 0px;
     }
 
     .discover_head :first-child {
-        font-size: 30px;
+        font-size: 38px;
     }
 
     .discover_head :nth-child(2) {
-        font-size: 24px;
+        font-size: 32px;
+    }
+
+    .styled-line {
+        width: 30%;
     }
 
     .discover_head :nth-child(3) {
-        font-size: 20px;
+        font-size: 26px;
     }
 
     .discover_head :nth-child(5) {
-        font-size: 14px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .discover_content_block::before {
+        width: 350px;
+        height: 350px;
+        top: 350px;
+        right: -120px;
+    }
+
+    .zoom_content {
+        width: 50%;
+        margin: 20px 0 0 80px;
     }
 
     .zoom_head {
-        font-size: 30px;
+        font-size: 36px;
     }
 
     .ubybox {
-        font-size: 45px;
+        font-size: 50px;
     }
 
     .zoom_text {
-        width: 500px;
-        font-size: 18px;
-        left: 180px;
+        width: 600px;
+        font-size: 24px;
+        line-height: 30px;
+        left: 260px;
     }
 
     .colorful-list {
-        left: 50%;
+        left: 35%;
     }
 
     .colorful-list li {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .demo {
-        left: 0;
+        left:  60px;
         top: 60px;
     }
 
+    .white_circle_uby_box {
+        width: 250px;
+        height: 250px;
+    }
+
+    .uby_box img {
+        width: 350px;
+    }
+
     .demo_button {
+        top: 80px;
         padding: 15px;
         border-radius: 20px;
     }
 
     .demo_button a {
-        font-size: 16px;
-    }
-
-    .assist_list ul {
-        font-size: 16px;
-    }
-
-    .assist_container_2 .assist_list {
-        position: relative;
-        width: 120%;
-        margin: 7% 0 0 30px;
-    }
-
-    .assist_container_3 .assist_list {
-        bottom: 40px;
-    }
-
-    .a_3_text {
-        bottom: 100px;
-    }
-
-    .a_2_img_1 {
-        top: 40px;
-    }
-
-    .a_3_img_2 {
-        left: 53%;
-    }
-
-    .d_demo button a {
-        font-size: 16px;
-    }
-
-    .d_demo_3 {
-        bottom: 170px;
-    }
-
-    .d_demo_4 button {
-        bottom: 50px;
-    }
-
-    .assist_container_5 {
-        height: 270px;
-    }
-
-    .d_demo_5 {
-        position: relative;
-        bottom: 165px;
-    }
-
-    .d_demo_5 button {
-        position: relative;
-        top: 90px;
-    }
-
-    .assist_container_5 .assist_p p {
-        width: 40%;
-        margin: 2%;
-    }
-
-    .assist_container_5 .assist_p :last-child {
-        margin-top: 4%;
-    }
-
-    .assist_container_5 .assist_list ul {
-        width: 100%;
-        position: relative;
-        left: 0px;
-    }
-
-    .assist_container_5 .assist_list {
-        margin-top: 2%;
-    }
-
-    .step-number {
-        font-size: 50px;
-    }
-
-    .step h2 {
         font-size: 20px;
     }
 
-    .step p {
+    /* assistant section */
+    .popup-content {
+        font-size: 26px;
+    }
+
+    .assistant {
+        margin: 0px 160px 20px 165px;
+    }
+
+    .assistant_head {
+        font-size: 35px;
+    }
+
+    .assist img {
+        width: 150px;
+    }
+
+        .assist_p {
+            margin: 10px 0 10px 125px;
+        }
+
+    .assist_p p{
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .assist_p span{
+        font-size: 32px;
+    }
+
+    .assist_list {
+        font-size: 24px;
+        left: 15%;
+    }
+
+    .d_demo button {
+        font-size: 26px;
+    }
+
+    .assist_container_1 {
+        height: 450px;
+    }
+
+    .d_demo_1 button {
+        width: 308px;
+        left: 320px;
+    }
+
+    .d_demo_1 img,
+    .d_demo_2 img,
+    .d_demo_3 img {
+        width: 520px;
+    }
+
+    .assist_container_2 {
+        height: 400px;
+        margin-top: 120px;
+    }
+
+    .assist_container_2 .assist img {
+        width: 180px;
+        bottom: -5px;
+    }
+
+    .d_demo_2 {
+        position: relative;
+        top: 10px;
+    }
+
+    .d_demo_2 button {
+        width: 308px;
+        right: 250px;
+        
+    }
+
+    .a_2_btn_1,
+    .a_3_btn,
+    .a_5_btn {
+        width: 80px;
+    }
+
+    .assist_container_3 .assist img {
+        width: 110px;
+    }
+
+    .assist_container_3 {
+        height: 450px;
+        margin-top: 180px;
+    }
+
+    .assist_container_3 .assist_p {
+        margin: 10px 0 10px 30px;
+    }
+
+    .assist_container_3 .assist_list {
+        left: 20%;
+    }
+
+    .d_demo_3 {
+        bottom: -10px;
+    }
+
+    .assist_container_3 button {
+        left: 45%;
+    }
+
+    .d_demo_3 button {
+        width: 308px;
+        left: 260px;
+    }
+
+    .a_3_text p {
+        font-size: 28px;
+    }
+
+    .a_3_text span {
+        font-size: 20px;
+    }
+
+    .assist_container_4 {
+        height: 500px;
+        margin-top: 120px;
+    }
+
+    .assist_container_4 .assist img {
+        margin: -30px 35px 10px;
+    }
+
+    .d_demo_4 {
+    padding-bottom: 0px;
+    }
+
+    .d_demo_4 button {
+        width: 308px;
+    }
+
+    .a_4_IA {
+        left: 1%;
+    }
+
+    .a_4_IA img {
+        width: 190px;
+    }
+
+    .a_4_IA_text p {
         font-size: 16px;
     }
 
+    .a_4_IA_text {
+        gap: 90px;
+    }
+
+    .a_4_IA_demo_text p {
+        font-size: 28px;
+    }
+
+    .a_4_IA_demo_text span {
+        font-size: 20px;
+    }
+
+    .assist_container_5 {
+        margin-top: 120px;
+        height: 400px;
+    }
+
+    .assist_container_5 .assist img {
+        margin: -25px -15px 0px -20px;
+    }
+
+    .assist_container_5 .a_5_btn {
+        left: 55%;
+    }
+
+    .d_demo_5 button {
+        width: 308px;
+        left: 20%;
+    }
+
+    .d_demo_5_text button {
+        width: 180px;
+        left: 0;
+    }
+
+    .d_demo_5_text {
+        width: 350px;
+    }
+
+    .d_demo_5_text p {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    /* Installation section */
+    h1 {
+        font-size: 42px;
+    }
+
+    .dot-path {
+        width: 1500px;
+    }
+
+    .step-number {
+        font-size: 70px;
+        top: -32px;
+    }
+
+    .step h2 {
+        font-size: 30px;
+    }
+
+    .step p {
+        font-size: 22px;
+    }
+
     .step {
-        width: 330px;
+        width: 450px;
+    }
+
+    /* offer section */
+
+    .offer {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 180px 100px 180px;
+    }
+
+    .offer_container {
+        margin: 100px 0;
+    }
+
+    .offer_head {
+        font-size: 36px;
+    }
+
+    .offer_img_1 {
+        width: 130%;
     }
 
     .offer_img_2 {
-        right: 300px;
-        bottom: 150px;
+        right: 350px;
+        /* bottom: 150px; */
     }
+
+    .offer_list {
+        left: 100px;
+    }
+
+    .ubya_offer {
+        width: 350px;
+        gap: 25px;
+        margin-left: 0px;
+        padding: 30px 15px;
+    }
+
+    .ubya_offer :nth-child(1) {
+        font-size: 35px;
+    }
+
+    .ubya_offer :nth-child(1) span {
+        font-size: 70px;
+    }
+
+    .ubya_offer :nth-child(2) {
+        font-size: 26px;
+    }
+
+    .ubya_offer :nth-child(2) span {
+        font-size: 50px;
+    }
+
+    .ubya_offer :nth-child(3) {
+        font-size: 22px;
+    }
+
+    .ubya_offer :nth-child(3) span {
+        font-size: 30px;
+    }
+
+    .ubya_offer :nth-child(4) {
+        font-size: 12px;
+        margin-top: -20px;
+    }
+
+    .offer_img_2 {
+        transform: rotate(-10deg);
+        left: 32%;
+        width: 120px;
+    }
+
+    .offer_list {
+        width: 33vw;
+        font-size: 20px;
+    }
+
+    .opt {
+        position: relative;
+        align-self: center;
+        left: 5%;
+        bottom: 50px;
+    }
+
+    .opt_circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .opt p {
+        font-size: 35px;
+        right: 45px;
+    }
+
+    .offer_opt {
+        top: 30px;
+        bottom: 50px;
+    
+    }
+
+    .offer_opt_1, .offer_opt_2, .offer_opt_3 {
+        width: 180px;
+        height: 180px;
+    }
+
+    .offer_opt p {
+        font-size: 16px;
+    }
+
+    .offer_opt_1 :nth-child(2) {
+        font-size: 14px;
+    }
+
+    .opt_1_span {
+        font-size: 25px;
+    }
+
+    .opt_3_span_1 {
+        font-size: 25px;
+    }
+
+    .opt_3_span_2 {
+        font-size: 15px;
+    }
+
+    .offer_opt_3 :last-child {
+        font-size: 14px;
+    }
+
+
 } 
 

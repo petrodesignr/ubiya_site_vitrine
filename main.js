@@ -184,7 +184,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             ?.join(' ') || '<span class="category-badge">Uncategorized</span>';
 
                         const primaryCategory = post._embedded['wp:term'][0]?.[0]; // Use the first category for button styling
-                        const categoryClassForButton = primaryCategory ? `newscrunch_category_${primaryCategory.id}` : '';
+                        const categoryClassForButton = primaryCategory ? `newscrunch_category_${primaryCategory.id}` : `category-badge`;
 
                         const publishDate = new Date(post.date).toLocaleDateString();
 

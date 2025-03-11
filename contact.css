@@ -130,16 +130,25 @@ main {
     margin: 0 auto;
 }
 
+.address {
+    position: absolute;
+    display: flex;
+    /* top: 0;
+    bottom: 100px; */
+}
+
 .textbox {
     position: relative;
-    margin-bottom: 26px;
+    margin-bottom: 35px;
 }
 
 /* Default label styling */
 .textbox>label {
     position: absolute;
+    width: 95px;
     left: 4px;
-    translate: 0 -50%;
+    translate: 0 -40px;
+    scale: 1;
     padding: 4px 8px;
     background: transparent;
     color: #194051;
@@ -151,8 +160,8 @@ main {
 .textbox>textarea:focus+label {
     background: #194051;
     color: white;
-    translate: 0px -43px;
-    scale: 0.8;
+    translate: 0px -40px;
+    scale: 1;
 }
 /* Green if input is valid */
 .textbox>input.valid.has-value+label,
@@ -188,18 +197,18 @@ main {
 }
 
 .textbox> :is(input:focus, .has-value)~label {
-    translate: 0px -33px;
-    scale: 0.8;
+    translate: 0px -40px;
+    scale: 1;
 }
 
 .textbox> :is(textarea:focus, .has-value)~label {
-    translate: 0px -40px;
-    scale: 0.8;
+    translate: 0px -46px;
+    scale: 1;
 }
 
 .textbox :is(label) {
     position: absolute;
-    top: 50%;
+    top: 55%;
     pointer-events: none;
     color: #194051;
     transition: 0.3s;
@@ -253,13 +262,6 @@ label[for=message] {
 .textbox>input:focus {
     outline: none;
 }
-
-@keyframes spin {
-    100% {
-        rotate: 1turn;
-    }
-}
-
 
 /* for the button*/
 
