@@ -252,7 +252,6 @@ body.menu-open {
 /* Style for the hamburger menu when open */
 .menu-links {
     position: fixed;
-    list-style: none;
     top: 0;
     right: 0;
     height: 100%;
@@ -295,8 +294,7 @@ body.menu-open::before {
     background: rgba(0, 0, 0, 0.5);
 }
 
-.menu-links a {
-    
+.menu a {
     display: block;
     font-family: 'IDGrotesk', sans-serif;
     font-size: 20px;
@@ -308,13 +306,14 @@ body.menu-open::before {
     line-height: 40px;
 }
 
-.menu-links li,
+.menu li,
 .contact li {
+    list-style: none;
     position: relative;
     left: 15vw;
 }
 
-.menu-links a:hover{
+.menu a:hover{
     color: grey;
     text-decoration: underline;
     text-underline-offset: 0.5rem;
@@ -1621,7 +1620,7 @@ h1 {
     padding-bottom: 30px;
 }
 
-#blog-news h5 {
+#blog-news h1 {
     font-size: 20px;
     padding:30px 20px 0px 20px;
     font-weight: lighter;
@@ -2397,6 +2396,7 @@ h1 {
             .home_text button a{
                 font-size: 10px;
                 margin: 5px 0;
+                padding: 5px 10px;
                 background-color: #194051;
                 color: white;
             }
@@ -3134,7 +3134,7 @@ h1 {
             }
         
             /* Section Blog */
-            #blog-news h5 {
+            #blog-news h1 {
                 font-size: 30px;
             }
 
@@ -3217,7 +3217,7 @@ h1 {
        gap: 10px;
    }
 
-   .d_contact li {
+   .d_contact ul{
        display: flex;
        flex-direction: row;
        justify-content: center;
@@ -3226,6 +3226,12 @@ h1 {
        font-size: 16px;
        list-style: none;
        gap: 10px;
+   }
+
+   .d_contact li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
    }
 
    .d_contact li a {    
@@ -3316,6 +3322,8 @@ h1 {
     .home_text button a {
         font-size: 12px;
         margin: 5px 0;
+        padding: 10px 15px;
+        border-radius: 20px;
         background-color: #194051;
         color: white;
 
@@ -3747,6 +3755,7 @@ h1 {
     .home_buttons button a{
         font-size: 16px;
         padding: 10px;
+        padding: 15px 20px;
         border-radius: 30px;
         margin-top: 60px;
     }
@@ -4112,6 +4121,7 @@ h1 {
     .home_buttons button a {
         font-size: 20px;
         padding: 10px;
+        padding: 20px 25px;
         border-radius: 30px;
         margin-top: 60px;
     }
